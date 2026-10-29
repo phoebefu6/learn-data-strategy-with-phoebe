@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- social:start -->
+<meta name="description" content="Session 5 of 6. How a new CDO pays for the first three data bets and proves they are working. Central budget, chargeback and staged bet funding and who carries the risk in each, leading against lagging value signals, a one-page board ask that gives the range, and Keelson Mutual's three bets funded with two value metrics each.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Learn with Phoebe">
+<meta property="og:title" content="Funding and value tracking - learn data strategy with phoebe">
+<meta property="og:description" content="Session 5 of 6. Pick how each data bet is paid for, name the signal that moves first, and take the board a one-page ask with the range, not a single number.">
+<meta property="og:url" content="https://phoebefu6.github.io/learn-data-strategy-with-phoebe/courses/05-funding-and-value-tracking.html">
+<meta property="og:image" content="https://phoebefu6.github.io/learn-data-strategy-with-phoebe/assets/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Funding and value tracking - learn data strategy with phoebe">
+<meta name="twitter:description" content="Session 5 of 6. Three funding models, leading and lagging value signals, and a one-page board ask.">
+<meta name="twitter:image" content="https://phoebefu6.github.io/learn-data-strategy-with-phoebe/assets/og-cover.png">
+<!-- social:end -->
+<title>Session 5 · Funding and value tracking - learn data strategy with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-data-strategy-with-phoebe</a> / Session 5 of 6</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn Data Strategy with Phoebe · Session 5 of 6</div>
+    <h1><span class="accent">Funding</span> and value tracking</h1>
+    <p class="sub">Keelson has a diagnosis, a place on the offense-defense dial, three bets and an operating model to deliver them. Now the two questions every sponsor asks next: how will this be paid for, and how will we know it is working before the year is out? Tonight we compare three ways to fund a data bet and who carries the risk in each, separate the signal that moves first from the one the board actually wants, and write a one-page ask that tells the board the range instead of promising a number.</p>
+    <div class="chip-row">
+      <span class="chip level">🟠 Deeper</span>
+      <span class="chip audience">New and aspiring CDOs, CDAOs, Heads of Data</span>
+      <span class="chip audience">Bring session 3's three bets</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:4">3-18 · Funding, signals, the ask</span>
+      <span class="a3" style="flex:5">18-40 · Build-along: fund Keelson's bets</span>
+      <span class="a4" style="flex:1">40-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Where we start</h2>
+    </div>
+    <p class="lede">The running case is constructed. Keelson Mutual is an invented mid-size insurer, and Maya Okafor is its first chief data officer. In session 3 the bench picked three bets: CDQ (claims data quality fixed at source), FTR (fraud triage score at first notice of loss) and CFT (claims fast-track triage for simple claims), costing 960 of a 1,100 (thousands) envelope and 21 of 24 team-months. In session 4 she chose who delivers them. Tom Reyes, the COO and her sponsor, now asks two things before the board meeting: which budget pays, and what he will be able to show in six months. Every Keelson person and number is invented for teaching.</p>
+
+    <div class="legend">
+      <span class="pill">🎫 Clear all three quiz questions to stamp your passport</span>
+      <span class="pill">Live = presented in the 45 minutes</span>
+      <span class="pill">Self-study = the full depth, after class</span>
+      <span class="pill">★ Build-along = write it yourself</span>
+    </div>
+
+    <div class="callout win">
+      <p><strong>★ What you walk out with tonight.</strong> The three funding models and the question that tells them apart (who loses if the bet fails), a rule for which bets suit which model, a leading and a lagging value signal for every bet with the reason the leading one comes first, a one-page board ask that carries session 3's range, and Keelson's funding page for its strategy document.</p>
+    </div>
+  </section>
+
+  <section class="section" id="part-1">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers three funding models and who carries the risk</span>
+      <h2>Three ways to pay for a data bet</h2>
+      <span class="tag concept">5 min live</span>
+    </div>
+    <p class="lede">There is no published standard for funding a data function; what follows is common practice in any organisation, named plainly. A data bet can be paid from a central budget line, charged back to the business units that use it, or funded in stages like a venture, one tranche at a time. The three differ less in where the money sits than in who loses if the bet does not pay off, and that difference decides which bets each model can carry.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three panels showing where money enters and who carries the risk. Central budget: an annual budget line pays the CDO's team, the business uses the work free, and the risk sits with the CDO's budget. Chargeback: a business unit's budget pays the data team per use, the team builds only what is paid for, and the risk sits with the units while foundations go unfunded. Staged bets, highlighted in brass: the sponsor releases tranche 1, a gate asks whether the leading signal moved, then the next tranche is released or the bet stops, and the risk is shared because a stop is cheap.">
+        <defs>
+          <filter id="f5aSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="51" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <pattern id="f5aHc" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(-38)"><line x1="0" y1="0" x2="0" y2="7" stroke="#0F1A6B" stroke-width="1" opacity=".5"/></pattern>
+          <marker id="f5aAr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#161A33" stroke-width="1.6" stroke-linecap="round"/></marker>
+        </defs>
+        <style>
+          .f5aH { font: 800 12px Inter, sans-serif; fill: #161A33; }
+          .f5aL { font: 600 12px Inter, sans-serif; fill: #161A33; }
+          .f5aS { font: 400 11px Inter, sans-serif; fill: #525773; }
+          .f5aB { font: 800 11px Inter, sans-serif; fill: #4A360C; }
+          .f5aA { font: 700 11px Inter, sans-serif; fill: #0F1A6B; }
+          .f5aN { font: 400 12px Inter, sans-serif; fill: #525773; }
+        </style>
+
+        <text class="f5aH" x="30" y="26">WHERE THE MONEY ENTERS, AND WHO LOSES IF THE BET FAILS</text>
+
+        <g filter="url(#f5aSk)" fill="none" stroke="#161A33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="40" y="44" width="250" height="236" rx="12" transform="rotate(-0.4 165 162)" fill="#EEF0FA"/>
+          <rect x="315" y="44" width="250" height="236" rx="12" transform="rotate(0.3 440 162)" fill="#EEF0FA"/>
+          <rect x="590" y="44" width="250" height="236" rx="12" transform="rotate(-0.3 715 162)" fill="#F8F1E2"/>
+          <rect x="60" y="84" width="210" height="30" rx="6" transform="rotate(-1.5 165 99)" fill="#FFFFFF"/>
+          <rect x="60" y="138" width="210" height="30" rx="6" transform="rotate(1 165 153)" fill="#FFFFFF"/>
+          <rect x="60" y="192" width="210" height="30" rx="6" transform="rotate(-1 165 207)" fill="#FFFFFF"/>
+          <rect x="335" y="84" width="210" height="30" rx="6" transform="rotate(1.2 440 99)" fill="#FFFFFF"/>
+          <rect x="335" y="138" width="210" height="30" rx="6" transform="rotate(-1 440 153)" fill="#FFFFFF"/>
+          <rect x="335" y="192" width="210" height="30" rx="6" transform="rotate(1.5 440 207)" fill="#FFFFFF"/>
+          <rect x="610" y="84" width="210" height="30" rx="6" transform="rotate(-1.2 715 99)" fill="#FFFFFF"/>
+          <rect x="610" y="138" width="210" height="30" rx="6" transform="rotate(0.8 715 153)" fill="#C9A45C"/>
+          <rect x="610" y="192" width="210" height="30" rx="6" transform="rotate(-1.4 715 207)" fill="#FFFFFF"/>
+          <path d="M165 118 L165 134" marker-end="url(#f5aAr)"/>
+          <path d="M165 172 L165 188" marker-end="url(#f5aAr)"/>
+          <path d="M440 118 L440 134" marker-end="url(#f5aAr)"/>
+          <path d="M440 172 L440 188" marker-end="url(#f5aAr)"/>
+          <path d="M715 118 L715 134" marker-end="url(#f5aAr)"/>
+          <path d="M715 172 L715 188" marker-end="url(#f5aAr)"/>
+          <ellipse cx="836" cy="22" rx="12" ry="5"/>
+          <path d="M824 22 L824 30 M848 22 L848 30"/>
+          <path d="M824 30 C830 36 842 36 848 30"/>
+        </g>
+
+        <text class="f5aH" x="60" y="70">CENTRAL BUDGET</text>
+        <text class="f5aH" x="335" y="70">CHARGEBACK</text>
+        <text class="f5aH" x="610" y="70">STAGED BETS</text>
+        <text class="f5aL" x="165" y="103" text-anchor="middle">Annual budget line</text>
+        <text class="f5aL" x="165" y="157" text-anchor="middle">CDO's team builds</text>
+        <text class="f5aL" x="165" y="211" text-anchor="middle">Business uses it, free</text>
+        <text class="f5aL" x="440" y="103" text-anchor="middle">Business unit budget</text>
+        <text class="f5aL" x="440" y="157" text-anchor="middle">Pays the team per use</text>
+        <text class="f5aL" x="440" y="211" text-anchor="middle">Team builds what is paid</text>
+        <text class="f5aL" x="715" y="103" text-anchor="middle">Sponsor releases tranche 1</text>
+        <text class="f5aB" x="715" y="157" text-anchor="middle">Gate: did the signal move?</text>
+        <text class="f5aL" x="715" y="211" text-anchor="middle">Release the next, or stop</text>
+        <text class="f5aA" x="60" y="250">RISK SITS WITH</text>
+        <text class="f5aL" x="60" y="267">the CDO's budget line</text>
+        <text class="f5aA" x="335" y="250">RISK SITS WITH</text>
+        <text class="f5aL" x="335" y="267">the units; foundations starve</text>
+        <text class="f5aA" x="610" y="250">RISK SITS WITH</text>
+        <text class="f5aB" x="610" y="267">both, and a stop is cheap</text>
+
+        <text class="f5aN" x="30" y="306">Common practice, not a published standard. Each panel reads top down from where the money enters.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the brass gate is what makes staged funding different: money follows a signal, not a calendar</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>Who loses if the bet fails?<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p><strong>Central budget</strong> is the simplest: a line in the annual plan pays the data team, and the business uses what it builds without paying. It suits foundations that serve everyone and that no single unit would buy, which at Keelson is CDQ. Its weakness is that the CDO carries all the risk and the business has no reason to say no to anything, so demand grows faster than the budget.</p>
+        <p><strong>Chargeback</strong> moves the cost to the units that use the work. It disciplines demand, because a request now costs the requester. It also starves foundations: no head of claims volunteers to pay for fixing a record that pricing and finance will use too. <strong>Staged bet funding</strong> releases money one tranche at a time, each tranche tied to a gate that the bet must pass. The risk is shared: the sponsor never commits the whole sum at once, and the CDO can stop a bet early without it reading as a failure, because stopping was written into the plan.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Matching the model to the bet<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Most organisations end up with a mix, and the useful rule is per bet, not per data function. A foundation that every other bet depends on belongs on a central line, because no unit will buy it and stopping it halfway leaves nothing usable. A bet with an uncertain payoff and a clear early signal belongs in stages, because the signal is what lets the sponsor release the next tranche with evidence. Chargeback fits mature, repeatable services whose users can see what they get, such as a reporting service a unit already relies on; it is a poor first-year model for a new CDO.</p>
+        <p>Two warnings. A chargeback set up before any foundation exists will fund dashboards and leave the crux untouched, which is session 3's "quick wins first" result arrived at through the budget instead of the ranking. And staged funding only works if the gate is written down before the money moves; a gate invented after the fact is a renewal, not a gate. How the work itself is delivered and tracked belongs to the <a href="https://phoebefu6.github.io/learn-data-pmo-with-phoebe/">Data PMO course ↗</a>.</p>
+      </div>
+    </details>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>The platform nobody would buy.</strong> A familiar pattern in any organisation: a data team moves to full chargeback to show it is "run like a business". Within a year its order book is full of reports and extracts for individual units, each one paid for, and the shared customer record that every unit complains about has no budget, because each unit expects another to pay. The model was not wrong for the reports. It was wrong for the foundation.</p>
+    </div>
+  </section>
+
+  <section class="section" id="part-2">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · covers leading against lagging value signals</span>
+      <h2>The signal that moves first</h2>
+      <span class="tag concept">5 min live</span>
+    </div>
+    <p class="lede">The value a board wants from a data bet, such as lower fraud losses, usually shows up a year or more after the money is spent, and at an insurer later still, because a claim's cost is known only when it settles. A lagging signal is that outcome. A leading signal is the earlier change that has to happen first if the outcome is ever going to move: people and systems actually using what was built. Every bet needs one of each, and the leading one is what a staged gate reads.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 304" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three lanes on a timeline from go-live for the fraud triage bet, FTR. Adoption, highlighted in brass, moves first, within weeks: the share of claims scored at first notice. Process moves within months: the referral rate to fraud investigators. Outcome moves after a year or more: confirmed fraud and losses avoided.">
+        <defs>
+          <filter id="f5bSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="57" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <pattern id="f5bHc" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(-38)"><line x1="0" y1="0" x2="0" y2="7" stroke="#0F1A6B" stroke-width="1" opacity=".5"/></pattern>
+          <marker id="f5bAr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#161A33" stroke-width="1.6" stroke-linecap="round"/></marker>
+        </defs>
+        <style>
+          .f5bH { font: 800 12px Inter, sans-serif; fill: #161A33; }
+          .f5bL { font: 600 12px Inter, sans-serif; fill: #161A33; }
+          .f5bS { font: 400 11px Inter, sans-serif; fill: #525773; }
+          .f5bB { font: 800 11px Inter, sans-serif; fill: #4A360C; }
+          .f5bA { font: 700 11px Inter, sans-serif; fill: #0F1A6B; }
+          .f5bN { font: 400 12px Inter, sans-serif; fill: #525773; }
+        </style>
+
+        <text class="f5bH" x="30" y="26">FTR, FRAUD TRIAGE AT FIRST NOTICE: WHICH SIGNAL MOVES WHEN</text>
+
+        <g filter="url(#f5bSk)" fill="none" stroke="#161A33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="220" y="72" width="300" height="34" rx="8" transform="rotate(-0.6 370 89)" fill="#C9A45C"/>
+          <rect x="400" y="132" width="300" height="34" rx="8" transform="rotate(0.5 550 149)" fill="#EEF0FA"/>
+          <rect x="580" y="192" width="260" height="34" rx="8" transform="rotate(-0.4 710 209)" fill="#FFFFFF"/>
+          <path d="M200 250 L846 250" marker-end="url(#f5bAr)"/>
+          <path d="M220 244 L220 256 M400 244 L400 256 M580 244 L580 256"/>
+          <circle cx="836" cy="26" r="11"/>
+          <path d="M836 26 L836 19 M836 26 L841 29"/>
+        </g>
+
+        <text class="f5bL" x="30" y="86">1 · Adoption</text>
+        <text class="f5bS" x="30" y="101">moves first, the gate</text>
+        <text class="f5bL" x="30" y="146">2 · Process</text>
+        <text class="f5bS" x="30" y="161">moves next</text>
+        <text class="f5bL" x="30" y="206">3 · Outcome</text>
+        <text class="f5bS" x="30" y="221">what the board wants</text>
+        <text class="f5bB" x="370" y="93" text-anchor="middle">share of claims scored at first notice</text>
+        <text class="f5bL" x="550" y="153" text-anchor="middle">referral rate to fraud investigators</text>
+        <text class="f5bL" x="710" y="213" text-anchor="middle">confirmed fraud, losses avoided</text>
+        <text class="f5bA" x="220" y="272" text-anchor="middle">go-live</text>
+        <text class="f5bA" x="400" y="272" text-anchor="middle">weeks</text>
+        <text class="f5bA" x="580" y="272" text-anchor="middle">months</text>
+        <text class="f5bA" x="800" y="272" text-anchor="middle">a year or more</text>
+
+        <text class="f5bN" x="30" y="294">Lanes and timings are constructed for Keelson; your signals and dates will differ.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - if the brass lane has not moved, the lanes to its right cannot, so read it first</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Why the leading signal comes first<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Fraud triage at Keelson works only if claims are scored when they are first reported. If a month after go-live only a small share of new claims carry a score, nothing downstream can change: the referral rate to investigators will not move, and confirmed fraud will not either. So the first thing Maya reports is the share of claims scored at first notice. It moves within weeks, it is fully in her team's control, and it tells Tom whether the bet is alive long before the outcome is visible.</p>
+        <p>The trap is to report only the leading signal and stop there. Adoption is necessary, never sufficient: claims can be scored and the score ignored. That is why each bet needs a lagging signal too, written down at the start with a date to check it, so nobody can quietly swap the outcome for the activity once the activity looks good. The mechanics of turning these into objectives and key results belong to the <a href="https://phoebefu6.github.io/learn-okr-with-phoebe/">OKR course ↗</a>.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Three tests for a value signal<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p><strong>It can be counted today.</strong> A signal that needs a new system to measure is a second bet. At Keelson, "losses avoided" depends on claims settling, which is exactly what the diagnosis said arrives late, so it is a lagging signal and must be read with that delay stated. <strong>It has an owner who is not the data team.</strong> The referral rate belongs to Priya Natarajan's claims function; if only the CDO watches it, nobody changes behaviour when it stalls.</p>
+        <p><strong>It says which way is good, and by when.</strong> "Track the referral rate" is a dashboard. "The referral rate rises, and the share of referrals confirmed does not fall, by the second quarter after go-live" is a signal a gate can read. The direction matters as much as the number: a referral rate that rises while the confirmed share falls means the score is sending investigators more noise. How to read such numbers without fooling yourself belongs to the <a href="https://phoebefu6.github.io/learn-data-literacy-with-phoebe/">Data Literacy course ↗</a>.</p>
+      </div>
+    </details>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>The hardest part of the job, by the role's own account.</strong> Gartner's 2025 survey of chief data and analytics officers (504 respondents, reported) found that 30 percent named the inability to measure the impact of data, analytics and AI on business outcomes as their top challenge. One survey, read through trade coverage because the press releases could not be opened, so treat it as a signal of where the difficulty sits, not a benchmark. The practical lesson: a bet with no leading signal written down at the start is a bet whose value nobody will be able to show.</p>
+    </div>
+  </section>
+
+  <section class="section" id="part-3">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · covers the board ask</span>
+      <h2>The board ask, on one page</h2>
+      <span class="tag concept">5 min live</span>
+    </div>
+    <p class="lede">A board approving the first year of a data strategy needs to decide four things: the envelope, the judgement behind the choice of bets, the rule for stopping, and what it will watch. All four fit on one page. What does not belong there is a return on investment figure for bets that have not started; the money case for a single bet, with costs and benefits in money, is the work of a planned business cases and ROI course, and the bench from session 3 claims orderings, never returns.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 362" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A one-page board paper with five blocks, each joined to the decision it asks the board for. The ask: CDQ, FTR and CFT for 960 of 1,100, 21 of 24 team-months; approve the envelope. The range, highlighted in brass: the same three in 173 of 500 weight draws, FTR in 352 of 500; own the call on slots 2 and 3. Gates: each tranche releases on a leading signal; agree the stop rule now. Signals: one leading and one lagging per bet; agree what to watch, and when. Not on the page: an ROI figure; the money case is a planned course.">
+        <defs>
+          <filter id="f5cSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="63" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <pattern id="f5cHc" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(-38)"><line x1="0" y1="0" x2="0" y2="7" stroke="#0F1A6B" stroke-width="1" opacity=".5"/></pattern>
+          <marker id="f5cAr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#161A33" stroke-width="1.6" stroke-linecap="round"/></marker>
+        </defs>
+        <style>
+          .f5cH { font: 800 12px Inter, sans-serif; fill: #161A33; }
+          .f5cL { font: 600 12px Inter, sans-serif; fill: #161A33; }
+          .f5cS { font: 400 11px Inter, sans-serif; fill: #525773; }
+          .f5cB { font: 800 11px Inter, sans-serif; fill: #4A360C; }
+          .f5cA { font: 700 11px Inter, sans-serif; fill: #0F1A6B; }
+          .f5cN { font: 400 12px Inter, sans-serif; fill: #525773; }
+        </style>
+
+        <text class="f5cH" x="30" y="26">KEELSON'S BOARD ASK (CONSTRUCTED), AND WHAT EACH BLOCK ASKS THE BOARD TO DECIDE</text>
+
+        <g filter="url(#f5cSk)" fill="none" stroke="#161A33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="40" y="46" width="480" height="280" rx="6" transform="rotate(-0.3 280 186)" fill="#FFFFFF"/>
+          <rect x="60" y="60" width="440" height="44" rx="6" transform="rotate(0.4 280 82)" fill="#EEF0FA"/>
+          <rect x="60" y="112" width="440" height="44" rx="6" transform="rotate(-0.4 280 134)" fill="#C9A45C"/>
+          <rect x="60" y="164" width="440" height="44" rx="6" transform="rotate(0.3 280 186)" fill="#EEF0FA"/>
+          <rect x="60" y="216" width="440" height="44" rx="6" transform="rotate(-0.3 280 238)" fill="#EEF0FA"/>
+          <rect x="60" y="268" width="440" height="44" rx="6" transform="rotate(0.4 280 290)" fill="#FFFFFF"/>
+          <path d="M508 82 L578 82" marker-end="url(#f5cAr)"/>
+          <path d="M508 134 L578 134" marker-end="url(#f5cAr)"/>
+          <path d="M508 186 L578 186" marker-end="url(#f5cAr)"/>
+          <path d="M508 238 L578 238" marker-end="url(#f5cAr)"/>
+          <path d="M508 290 L578 290" marker-end="url(#f5cAr)"/>
+          <path d="M486 40 L486 54 C486 60 496 60 496 54 L496 38 C496 32 490 32 490 38 L490 52"/>
+        </g>
+
+        <text class="f5cL" x="76" y="79">The ask: CDQ, FTR, CFT for 960 of 1,100 (thousands)</text>
+        <text class="f5cS" x="76" y="95">21 of 24 team-months, inside Tom's first-year envelope</text>
+        <text class="f5cL" x="76" y="131">The range: the same three in 173 of 500 weight draws</text>
+        <text class="f5cB" x="76" y="147">FTR is in 352 of 500; slots 2 and 3 are a judgement</text>
+        <text class="f5cL" x="76" y="183">Gates: each tranche releases on a leading signal</text>
+        <text class="f5cS" x="76" y="199">CFT's money waits until CDQ's intake record is in use</text>
+        <text class="f5cL" x="76" y="235">Signals: one leading and one lagging per bet</text>
+        <text class="f5cS" x="76" y="251">each with an owner and a date, written before money moves</text>
+        <text class="f5cL" x="76" y="287">Not on the page: an ROI figure</text>
+        <text class="f5cS" x="76" y="302">the bench claims orderings, not returns</text>
+
+        <text class="f5cA" x="590" y="56">WHAT THE BOARD DECIDES</text>
+        <text class="f5cL" x="590" y="86">Approve the envelope</text>
+        <text class="f5cB" x="590" y="138">Own the call on slots 2 and 3</text>
+        <text class="f5cL" x="590" y="190">Agree the stop rule now</text>
+        <text class="f5cL" x="590" y="242">Agree what to watch, and when</text>
+        <text class="f5cS" x="590" y="294">Money case: a planned course</text>
+
+        <text class="f5cN" x="30" y="350">Numbers from session 3's bench; Keelson and its envelope are constructed.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the brass block is what most board papers leave out: how sure you are, said as a range</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Give the range, not a point<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Session 3 reran the exact search 500 times with each weight drawn up to 20 percent either side of its agreed value. The same set, CDQ, FTR and CFT, came back in 173 of 500 draws, 34.6 percent. Read alone, that sounds weak. Read with the bars, it is a clear message: FTR is in the exact set in 352 of 500 draws, and the other two slots split between CDQ with CFT (321 each) and CAT with RET (179 each).</p>
+        <p>So the board ask does not say "these three are optimal". It says: "Fraud triage is first under any weighting we tried. For the other two we recommend the claims fix and fast-track, because they also answer the diagnosis; the alternative pair scores almost as well and does not." That sentence hands the board a judgement it can own, which is safer for the CDO than a single number the board will later hold her to. The method of weighing options in general belongs to the <a href="https://phoebefu6.github.io/learn-decision-intelligence-with-phoebe/">Decision Intelligence course ↗</a>.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Why no ROI figure, yet<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>A return figure for a bet that has not started is built from assumptions about adoption, process change and outcome, the three lanes in Part 2, multiplied together. Each is uncertain, and the product is more uncertain than any of them, yet it arrives on the page with two decimal places. Boards remember the number and forget the assumptions. The bench was built to claim orderings for the same reason: with constructed rows, which bet rises and which falls is defensible; what a bet returns is not.</p>
+        <p>None of this means the money case never gets made. Each bet will need one, with costs and benefits in money, before its later tranches are released, and that discipline is owned by the planned business cases and ROI course. What this page gives the board instead is a staged structure: a small first tranche, a leading signal that releases the next, and a stop rule agreed in advance. The board risks less, and learns more before it commits the rest.</p>
+      </div>
+    </details>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>The number that outlived its assumptions.</strong> A familiar pattern in any organisation: a programme is approved on a single projected return, the assumptions slide is in the appendix, and two years later the only thing anyone remembers is the number. When adoption is slower than assumed, the programme is judged against the figure, not against the assumption that broke. A range and a staged gate put the assumption on the front page, where it can be checked first.</p>
+    </div>
+  </section>
+
+  <section class="section" id="demo-1">
+    <div class="section-kicker">
+      <span class="klabel">Build-along</span>
+      <h2>Funding Keelson's three bets</h2>
+      <span class="tag demo">★ 22 min · everyone builds</span>
+    </div>
+    <p class="lede">Maya writes the funding page of Keelson's strategy document: how each of CDQ, FTR and CFT is paid for, what releases its money, and two value metrics each, one leading and one lagging. Everything below is constructed, including every metric and gate; where a target or a date is needed, the page leaves it for you to set, because your numbers will differ. If you have your own three bets, run the same steps on them as you go.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 310" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A grid of Keelson's three bets against funding, leading metric and lagging metric. CDQ, claims data quality: central budget, because it is a foundation nobody buys; leading, share of new claims keyed complete at first notice; lagging, hand rebuilds of reserves per quarter and the number of sources for one claims total. FTR, fraud triage: staged, tranche 1 now and the next on the leading signal; leading, share of claims scored at first notice; lagging, referral rate, then the confirmed share of referrals. CFT, claims fast-track: staged and gated on CDQ, highlighted in brass, because its money waits for the record; leading, share of simple claims routed to fast-track at intake; lagging, days from first notice to settlement for simple claims. An arrow on the left links CDQ to CFT.">
+        <defs>
+          <filter id="f5dSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="69" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <pattern id="f5dHc" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(-38)"><line x1="0" y1="0" x2="0" y2="7" stroke="#0F1A6B" stroke-width="1" opacity=".5"/></pattern>
+          <marker id="f5dAr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#161A33" stroke-width="1.6" stroke-linecap="round"/></marker>
+        </defs>
+        <style>
+          .f5dH { font: 800 12px Inter, sans-serif; fill: #161A33; }
+          .f5dL { font: 600 12px Inter, sans-serif; fill: #161A33; }
+          .f5dS { font: 400 11px Inter, sans-serif; fill: #525773; }
+          .f5dB { font: 800 11px Inter, sans-serif; fill: #4A360C; }
+          .f5dA { font: 700 11px Inter, sans-serif; fill: #0F1A6B; }
+          .f5dN { font: 400 12px Inter, sans-serif; fill: #525773; }
+        </style>
+
+        <text class="f5dH" x="30" y="26">KEELSON'S FUNDING PAGE: HOW EACH BET IS PAID, AND HOW WE WILL KNOW</text>
+
+        <g filter="url(#f5dSk)" fill="none" stroke="#161A33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="40" y="74" width="150" height="54" rx="8" transform="rotate(-1 115 101)" fill="#EEF0FA"/>
+          <rect x="40" y="144" width="150" height="54" rx="8" transform="rotate(1 115 171)" fill="#EEF0FA"/>
+          <rect x="40" y="214" width="150" height="54" rx="8" transform="rotate(-1 115 241)" fill="#EEF0FA"/>
+          <rect x="210" y="74" width="190" height="54" rx="6" transform="rotate(0.6 305 101)" fill="#FFFFFF"/>
+          <rect x="210" y="144" width="190" height="54" rx="6" transform="rotate(-0.6 305 171)" fill="#FFFFFF"/>
+          <rect x="210" y="214" width="190" height="54" rx="6" transform="rotate(0.8 305 241)" fill="#C9A45C"/>
+          <rect x="420" y="74" width="220" height="54" rx="6" transform="rotate(-0.5 530 101)" fill="#FFFFFF"/>
+          <rect x="420" y="144" width="220" height="54" rx="6" transform="rotate(0.5 530 171)" fill="#FFFFFF"/>
+          <rect x="420" y="214" width="220" height="54" rx="6" transform="rotate(-0.6 530 241)" fill="#FFFFFF"/>
+          <rect x="660" y="74" width="200" height="54" rx="6" transform="rotate(0.5 760 101)" fill="#FFFFFF"/>
+          <rect x="660" y="144" width="200" height="54" rx="6" transform="rotate(-0.5 760 171)" fill="#FFFFFF"/>
+          <rect x="660" y="214" width="200" height="54" rx="6" transform="rotate(0.6 760 241)" fill="#FFFFFF"/>
+          <path d="M38 101 C14 110 14 232 34 241" marker-end="url(#f5dAr)"/>
+        </g>
+
+        <text class="f5dA" x="40" y="62">BET</text>
+        <text class="f5dA" x="210" y="62">FUNDING</text>
+        <text class="f5dA" x="420" y="62">LEADING (MOVES FIRST)</text>
+        <text class="f5dA" x="660" y="62">LAGGING (THE OUTCOME)</text>
+        <text class="f5dH" x="60" y="96">CDQ</text>
+        <text class="f5dS" x="60" y="112">claims data quality</text>
+        <text class="f5dH" x="60" y="166">FTR</text>
+        <text class="f5dS" x="60" y="182">fraud triage</text>
+        <text class="f5dH" x="60" y="236">CFT</text>
+        <text class="f5dS" x="60" y="252">claims fast-track</text>
+        <text class="f5dL" x="222" y="96">Central budget</text>
+        <text class="f5dS" x="222" y="112">a foundation nobody buys</text>
+        <text class="f5dL" x="222" y="166">Staged: tranche 1 now</text>
+        <text class="f5dS" x="222" y="182">next on the leading signal</text>
+        <text class="f5dB" x="222" y="236">Staged, gated on CDQ</text>
+        <text class="f5dB" x="222" y="252">money waits for the record</text>
+        <text class="f5dL" x="432" y="96">New claims keyed complete</text>
+        <text class="f5dS" x="432" y="112">at first notice, share of all</text>
+        <text class="f5dL" x="432" y="166">Claims scored at first</text>
+        <text class="f5dS" x="432" y="182">notice, share of all</text>
+        <text class="f5dL" x="432" y="236">Simple claims routed</text>
+        <text class="f5dS" x="432" y="252">to fast-track at intake, share</text>
+        <text class="f5dL" x="672" y="96">Hand reserve rebuilds</text>
+        <text class="f5dS" x="672" y="112">per quarter; sources per total</text>
+        <text class="f5dL" x="672" y="166">Referral rate, then</text>
+        <text class="f5dS" x="672" y="182">confirmed share of referrals</text>
+        <text class="f5dL" x="672" y="236">Days, first notice</text>
+        <text class="f5dS" x="672" y="252">to settlement, simple claims</text>
+
+        <text class="f5dN" x="30" y="296">Constructed metrics and gates; targets and dates are yours to set, so your numbers will differ.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - CFT's money is the one that waits: it depends on CDQ, so its gate reads CDQ's leading signal</figcaption>
+    </figure>
+
+    <div class="steps">
+      <div class="step">
+        <p><strong>Start from what the bench gave you.</strong> Copy session 3's exact set and its fit to the envelope. The difference is the headroom, which you keep visible rather than spend.</p>
+        <div class="prompt-box good"><span class="label">★ Step 1 · the starting point (session 3 bench)</span>Bets:        CDQ  claims data quality fixed at source  (defense)
+             FTR  fraud triage score at first notice   (offense)
+             CFT  claims fast-track for simple claims  (offense)
+Cost:        960 of 1,100 (thousands, constructed)
+Team:        21 of 24 team-months
+Headroom:    140 (thousands) and 3 team-months, unallocated
+Dependency:  CFT needs CDQ
+Range:       same three in 173 of 500 draws; FTR in 352</div>
+      </div>
+      <div class="step">
+        <p><strong>Choose a funding model per bet, with the reason.</strong> Ask one question of each: if it stopped halfway, would anything usable be left? A foundation that leaves nothing usable when stopped goes on a central line; a bet with a clear early signal goes in stages.</p>
+        <div class="prompt-box good"><span class="label">★ Step 2 · model per bet</span>CDQ  central budget
+     why: every other claims bet depends on it, no single
+     unit will pay for it, and half a fix is no fix
+FTR  staged funding
+     why: uncertain payoff, but a clear signal in weeks
+CFT  staged funding, gated on CDQ
+     why: cannot start until claims are keyed at intake
+
+Risk sits with:  CDQ = Maya's line;  FTR, CFT = shared
+                 with Tom, through the gates</div>
+      </div>
+      <div class="step">
+        <p><strong>Write each gate before any money moves.</strong> A gate names the signal, the direction, the date it is read, and what happens on a no. Leave the target values blank until you have a baseline from your own data.</p>
+        <div class="prompt-box good"><span class="label">★ Step 3 · the gates</span>FTR gate 1   read: share of claims scored at first notice
+             direction: rising toward [your target]
+             when: [date you set], a few weeks after go-live
+             on a no: fix adoption, or stop and return the rest
+CFT gate 0   read: CDQ's share of claims keyed complete
+             at intake
+             when: CFT tranche 1 is released only after it holds
+             on a no: CFT money stays unspent, not reallocated</div>
+      </div>
+      <div class="step">
+        <p><strong>Write two value metrics per bet: one leading, one lagging.</strong> The leading one is what the gate reads; the lagging one is what the board was promised. Name an owner outside the data team for each lagging metric.</p>
+        <div class="prompt-box good"><span class="label">★ Step 4 · six metrics (constructed)</span>CDQ  leading:  share of new claims keyed complete at
+                first notice
+     lagging:  hand reserve rebuilds per quarter; sources
+                for one claims total            owner: Ben, Elena
+FTR  leading:  share of claims scored at first notice
+     lagging:  referral rate, and the confirmed share of
+                referrals                       owner: Priya
+CFT  leading:  share of simple claims routed to fast-track
+                at intake
+     lagging:  days from first notice to settlement,
+                simple claims                   owner: Priya</div>
+      </div>
+      <div class="step">
+        <p><strong>Pair each leading metric with its failure reading.</strong> For every lagging metric, write the reading that would mean the bet is moving the wrong way even while adoption looks good. This is what stops activity being reported as value.</p>
+        <div class="prompt-box good"><span class="label">★ Step 5 · the wrong-way readings</span>FTR  referral rate rises while the confirmed share falls
+     -&gt; the score is sending investigators noise
+CFT  more claims fast-tracked, but reopened claims rise
+     -&gt; the routing rule is too loose
+CDQ  fields keyed complete, but reserves still rebuilt by
+     hand -&gt; the record is filled, not trusted</div>
+      </div>
+      <div class="step">
+        <p><strong>Assemble the funding page.</strong> One page in Keelson's strategy document, in the order the board reads it: the ask, the range, the gates, the signals, and what is deliberately not on it.</p>
+        <div class="prompt-box good"><span class="label">★ Step 6 · Keelson's funding page (draft)</span>The ask      CDQ, FTR, CFT: 960 of 1,100 (thousands),
+             21 of 24 team-months; 140 and 3 held back
+The range    FTR first under any weighting tried (352 of
+             500); CDQ + CFT recommended for slots 2-3
+             because they answer the diagnosis
+Funding      CDQ central; FTR staged; CFT staged, gated
+             on CDQ's intake record
+Signals      six metrics above, owners named, dates set
+Stop rule    a gate read as "no" returns that tranche
+Not here     ROI figures (each bet's money case comes
+             before its later tranches)</div>
+      </div>
+    </div>
+
+    <div class="callout tip">
+      <p><strong>Read the stop rule out loud.</strong> Maya walks Tom through the page and spends most of the time on one line: "a gate read as no returns that tranche". A sponsor who has agreed to that in advance can defend a stopped bet to the board as the plan working, not the strategy failing, and a CDO who has written it can stop a bet without losing the other two.</p>
+    </div>
+  </section>
+
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Before session 6</h2>
+      <span class="tag exercise">30 min</span>
+    </div>
+    <ol>
+      <li><strong>Find out how your data work is funded today.</strong> Central line, chargeback, project by project, or a mix. Write down who loses if a data bet fails under the current setup.</li>
+      <li><strong>Pick a funding model for each of your three bets,</strong> using the halfway test: if it stopped halfway, would anything usable be left?</li>
+      <li><strong>Write one leading and one lagging metric per bet,</strong> with an owner outside the data team for each lagging one, and the wrong-way reading for each.</li>
+      <li><strong>Draft your one-page board ask</strong> with your session 3 range on it. Bring it to session 6, where it becomes one block of the strategy on a page.</li>
+    </ol>
+  </section>
+
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions</h2>
+    </div>
+    <p>Clear all three and session 5 gets stamped in your passport.</p>
+
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">1 · Keelson's CDQ fixes claims data at source, and every other claims bet depends on it. Which funding model fits it best?</p>
+      <button class="qopt" type="button">A · Chargeback to the claims unit, because claims uses it most</button>
+      <button class="qopt" type="button">B · Staged funding, with the whole bet stopped if the first tranche shows no outcome</button>
+      <button class="qopt" type="button">C · A central budget line, because no single unit will pay for a shared foundation and half a fix leaves nothing usable</button>
+      <button class="qopt" type="button">D · No funding until a full ROI is calculated</button>
+      <p class="qwhy">A foundation serves everyone, so chargeback leaves it unfunded while each unit waits for another to pay. Stopping it halfway leaves nothing to show, which is why staged funding suits FTR and CFT better. An ROI for a foundation is the weakest number on any page.</p>
+    </div>
+
+    <div class="quiz-q" data-answer="3">
+      <p class="qtext">2 · Six weeks after FTR goes live, which signal should Maya report first?</p>
+      <button class="qopt" type="button">A · Fraud losses avoided, because that is what the board wants</button>
+      <button class="qopt" type="button">B · The number of models the team has trained</button>
+      <button class="qopt" type="button">C · Nothing, until a full year of claims has settled</button>
+      <button class="qopt" type="button">D · The share of claims scored at first notice, because nothing downstream can move until claims carry a score</button>
+      <p class="qwhy">Losses avoided is the lagging signal, and at an insurer it waits for claims to settle. The share scored at first notice is the leading signal: it moves within weeks and the referral rate cannot move without it. B is activity inside the data team, not a value signal.</p>
+    </div>
+
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">3 · How should the board ask present session 3's result of 173 of 500 draws?</p>
+      <button class="qopt" type="button">A · As a range: FTR is first under any weighting tried, and slots 2 and 3 are a judgement the board can own</button>
+      <button class="qopt" type="button">B · As a 34.6 percent chance that the strategy succeeds</button>
+      <button class="qopt" type="button">C · Leave it out: a board wants one answer</button>
+      <button class="qopt" type="button">D · Replace it with an ROI figure for the three bets combined</button>
+      <p class="qwhy">The draws measure how sensitive the choice is to the weights, never a probability of success, which rules out B. Hiding it (C) or swapping it for a return figure (D) removes exactly the judgement the board should be asked to own.</p>
+    </div>
+
+    <p class="quiz-score"></p>
+  </section>
+
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Sources covered</span>
+      <h2>What this session teaches, and where it came from</h2>
+    </div>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">The bets bench from session 3</span><span class="note">The exact set, its cost and team-months, and the 173 of 500 range are quoted from the bench, whose browser and Python implementations agree on every pick and count</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Gartner (2025), CDAO Agenda Survey press releases</span><span class="note">30 percent of 504 respondents name inability to measure impact on business outcomes as the top challenge. Reported: the press release pages could not be opened</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Central budget, chargeback and staged bet funding</span><span class="note">Common practice in any organisation, named plainly; no single published source prescribes the three or the rule for matching them to bets</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Leading and lagging value signals</span><span class="note">A common measurement distinction; the three lanes and their timings are constructed for Keelson</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Business cases, NPV and ROI</span><span class="note">Deliberately not taught here; owned by a planned business cases and ROI course</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Keelson Mutual, Maya, Tom, Priya, Ben and Elena</span><span class="note">Constructed for teaching; every metric, gate and envelope is invented, and no number about them is a measurement</span></div>
+    </div>
+    <p class="mono" style="margin-top:14px">Every fact on this page, and its verification tier, is recorded in the course's source map.</p>
+  </section>
+
+  <section class="cheat" id="cheatsheet">
+    <h3>Session 5 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>Who loses if it fails?</b><span>Central: the CDO. Chargeback: the units. Staged: shared, and a stop is cheap.</span></div>
+      <div class="cheat-item"><b>The halfway test</b><span>Nothing usable if stopped halfway? Central line. A clear early signal? Stages.</span></div>
+      <div class="cheat-item"><b>Chargeback starves foundations</b><span>Nobody buys the shared record. Use it for mature services, not year one.</span></div>
+      <div class="cheat-item"><b>Two signals per bet</b><span>Leading moves first and opens the gate; lagging is what the board was promised.</span></div>
+      <div class="cheat-item"><b>Write the wrong-way reading</b><span>The pattern that means activity is up and value is not. Agree it before go-live.</span></div>
+      <div class="cheat-item"><b>The board ask</b><span>Envelope, range, gates, signals, stop rule. One page, no ROI figure yet.</span></div>
+    </div>
+  </section>
+
+  <div class="callout next">
+    <span class="nx-pill">Next session</span>
+    <p>Keelson's bets are funded and every one has a signal to watch. Session 6 assembles the whole strategy on a page: the diagnosis, the dial, the three bets, the operating model and this funding page, read against the UK and US national data strategies and Singapore's approach, then sequenced into a 100-day roadmap.</p>
+  </div>
+
+  <footer class="pagefoot">
+    <span>Session 5 of 6 · learn-data-strategy-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="04-operating-model.html">← Prev: Operating model</a> &nbsp;·&nbsp; <a href="06-strategy-on-a-page.html">Next: The strategy on a page →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>

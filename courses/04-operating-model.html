@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- social:start -->
+<meta name="description" content="Session 4 of 6. Three bets are chosen; now someone has to deliver them. Centralised, hub-and-spoke and federated data teams, where the CDO reports and what each line buys, and the minimum governance that lets three bets ship. Keelson Mutual picks its model and writes a RACI for CDQ, FTR and CFT.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Learn with Phoebe">
+<meta property="og:title" content="Operating model - learn data strategy with phoebe">
+<meta property="og:description" content="Session 4 of 6. Where the data people sit, where the CDO reports, and just enough governance to ship three bets.">
+<meta property="og:url" content="https://phoebefu6.github.io/learn-data-strategy-with-phoebe/courses/04-operating-model.html">
+<meta property="og:image" content="https://phoebefu6.github.io/learn-data-strategy-with-phoebe/assets/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Operating model - learn data strategy with phoebe">
+<meta name="twitter:description" content="Session 4 of 6. Team shape, reporting line, minimum governance, and a RACI for three bets.">
+<meta name="twitter:image" content="https://phoebefu6.github.io/learn-data-strategy-with-phoebe/assets/og-cover.png">
+<!-- social:end -->
+<title>Session 4 · Operating model - learn data strategy with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-data-strategy-with-phoebe</a> / Session 4 of 6</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn Data Strategy with Phoebe · Session 4 of 6</div>
+    <h1><span class="accent">Operating</span> model</h1>
+    <p class="sub">A strategy with three good bets and no one clearly responsible for them is a wish. Tonight we decide who delivers Keelson's bets: where the data people sit and who sets their priorities, where the chief data officer reports and what each reporting line buys, and the smallest amount of governance that lets three bets ship without a programme nobody asked for. The page Maya adds tonight is a model choice and a RACI that every executive can read in a minute.</p>
+    <div class="chip-row">
+      <span class="chip level">🟠 Deeper</span>
+      <span class="chip audience">New and aspiring CDOs, CDAOs, Heads of Data</span>
+      <span class="chip audience">No tools needed</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:4">3-18 · Shape, line, governance</span>
+      <span class="a3" style="flex:5">18-40 · Build-along: Keelson's model and RACI</span>
+      <span class="a4" style="flex:1">40-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Where we start</h2>
+    </div>
+    <p class="lede">The running case is constructed. Keelson Mutual is an invented mid-size insurer, and every person and number in it is invented for teaching. After session 3 Maya Okafor, Keelson's first chief data officer, has three bets: CDQ, fixing claims data quality at source; FTR, a fraud triage score at first notice of loss; and CFT, fast-track triage for simple claims. Two of them live in Priya Natarajan's claims function, one leans on Elena Ruiz's risk team, and all three touch the reserves Ben Hale signs. Tom Reyes, the COO who sponsored Maya's role, now asks the obvious question: who is going to do this, and who decides when they disagree?</p>
+
+    <div class="legend">
+      <span class="pill">🎫 Clear all three quiz questions to stamp your passport</span>
+      <span class="pill">Live = presented in the 45 minutes</span>
+      <span class="pill">Self-study = the full depth, after class</span>
+      <span class="pill">★ Build-along = write it yourself</span>
+    </div>
+
+    <div class="callout win">
+      <p><strong>★ What you walk out with tonight.</strong> The three common team shapes with what each optimises and the sentence you hear when it breaks, the trade-offs of four CDO reporting lines and an honest reading of the one survey everyone quotes, a three-part minimum for governance (critical data elements, one owner per bet, one decision forum), and a model choice plus RACI for Keelson that you can redraw for your own organisation.</p>
+    </div>
+  </section>
+
+  <section class="section" id="part-1">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers centralised, hub-and-spoke and federated teams</span>
+      <h2>Three shapes for one data team</h2>
+      <span class="tag concept">5 min live</span>
+    </div>
+    <p class="lede">Every data operating model answers two questions: where do the data people sit, and who decides what they work on? A centralised team keeps both in one place. A federated model puts both in the business domains and keeps only the standards in the middle. Hub-and-spoke splits them: a central hub owns the shared foundations and the standards, and analysts embedded in each domain work on that domain's priorities. None of the three is right in general; each optimises one thing and breaks in a recognisable way.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 346" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three panels, each with a CDO team box above three domain boxes for claims, fraud and pricing; dots are people. Centralised: six people in the CDO team, none in the domains, which only ask; optimises one standard, breaks when the queue outgrows the team. Hub and spoke, highlighted in brass: two people in the hub, one in each domain; optimises a shared core with local speed, breaks when the hub does the spokes' work. Federated: the CDO sets standards only, two people in each domain; optimises domain speed and ownership, breaks when no one owns the shared record.">
+        <defs>
+          <filter id="f4aSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="43" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <pattern id="f4aHc" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(-38)"><line x1="0" y1="0" x2="0" y2="7" stroke="#0F1A6B" stroke-width="1" opacity=".5"/></pattern>
+          <marker id="f4aAr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#161A33" stroke-width="1.6" stroke-linecap="round"/></marker>
+        </defs>
+        <style>
+          .f4aH { font: 800 12px Inter, sans-serif; fill: #161A33; }
+          .f4aL { font: 600 12px Inter, sans-serif; fill: #161A33; }
+          .f4aS { font: 400 11px Inter, sans-serif; fill: #525773; }
+          .f4aB { font: 800 11px Inter, sans-serif; fill: #4A360C; }
+          .f4aA { font: 700 11px Inter, sans-serif; fill: #0F1A6B; }
+          .f4aN { font: 400 12px Inter, sans-serif; fill: #525773; }
+        </style>
+
+        <text class="f4aH" x="30" y="26">WHERE THE PEOPLE SIT, AND WHERE PRIORITIES ARE SET</text>
+
+        <g filter="url(#f4aSk)" fill="none" stroke="#161A33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="30" y="44" width="260" height="262" rx="12" transform="rotate(-0.4 160 175)" fill="#FFFFFF"/>
+          <rect x="310" y="44" width="260" height="262" rx="12" transform="rotate(0.3 440 175)" fill="#FFFFFF"/>
+          <rect x="590" y="44" width="260" height="262" rx="12" transform="rotate(-0.3 720 175)" fill="#FFFFFF"/>
+
+          <rect x="80" y="80" width="160" height="52" rx="8" transform="rotate(-1 160 106)" fill="#EEF0FA"/>
+          <rect x="360" y="80" width="160" height="52" rx="8" transform="rotate(1 440 106)" fill="#C9A45C"/>
+          <rect x="640" y="80" width="160" height="52" rx="8" transform="rotate(-0.8 720 106)" fill="#FFFFFF"/>
+
+          <path d="M160 134 L76 170"/>
+          <path d="M160 134 L160 170"/>
+          <path d="M160 134 L244 170"/>
+          <path d="M440 134 L356 170" stroke-dasharray="5 5"/>
+          <path d="M440 134 L440 170" stroke-dasharray="5 5"/>
+          <path d="M440 134 L524 170" stroke-dasharray="5 5"/>
+          <path d="M720 134 L636 170" stroke-dasharray="2 6"/>
+          <path d="M720 134 L720 170" stroke-dasharray="2 6"/>
+          <path d="M720 134 L804 170" stroke-dasharray="2 6"/>
+
+          <rect x="40" y="172" width="72" height="50" rx="6" transform="rotate(-2 76 197)" fill="url(#f4aHc)"/>
+          <rect x="124" y="172" width="72" height="50" rx="6" transform="rotate(1.5 160 197)" fill="url(#f4aHc)"/>
+          <rect x="208" y="172" width="72" height="50" rx="6" transform="rotate(-1 244 197)" fill="url(#f4aHc)"/>
+          <rect x="320" y="172" width="72" height="50" rx="6" transform="rotate(1.5 356 197)" fill="#EEF0FA"/>
+          <rect x="404" y="172" width="72" height="50" rx="6" transform="rotate(-1.5 440 197)" fill="#EEF0FA"/>
+          <rect x="488" y="172" width="72" height="50" rx="6" transform="rotate(2 524 197)" fill="#EEF0FA"/>
+          <rect x="600" y="172" width="72" height="50" rx="6" transform="rotate(-1.5 636 197)" fill="#EEF0FA"/>
+          <rect x="684" y="172" width="72" height="50" rx="6" transform="rotate(1 720 197)" fill="#EEF0FA"/>
+          <rect x="768" y="172" width="72" height="50" rx="6" transform="rotate(-2 804 197)" fill="#EEF0FA"/>
+
+          <circle cx="110" cy="118" r="5" fill="#0F1A6B"/>
+          <circle cx="130" cy="118" r="5" fill="#0F1A6B"/>
+          <circle cx="150" cy="118" r="5" fill="#0F1A6B"/>
+          <circle cx="170" cy="118" r="5" fill="#0F1A6B"/>
+          <circle cx="190" cy="118" r="5" fill="#0F1A6B"/>
+          <circle cx="210" cy="118" r="5" fill="#0F1A6B"/>
+          <circle cx="430" cy="118" r="5" fill="#0F1A6B"/>
+          <circle cx="450" cy="118" r="5" fill="#0F1A6B"/>
+          <circle cx="356" cy="208" r="5" fill="#0F1A6B"/>
+          <circle cx="440" cy="208" r="5" fill="#0F1A6B"/>
+          <circle cx="524" cy="208" r="5" fill="#0F1A6B"/>
+          <circle cx="628" cy="208" r="5" fill="#0F1A6B"/>
+          <circle cx="644" cy="208" r="5" fill="#0F1A6B"/>
+          <circle cx="712" cy="208" r="5" fill="#0F1A6B"/>
+          <circle cx="728" cy="208" r="5" fill="#0F1A6B"/>
+          <circle cx="796" cy="208" r="5" fill="#0F1A6B"/>
+          <circle cx="812" cy="208" r="5" fill="#0F1A6B"/>
+        </g>
+
+        <text class="f4aH" x="46" y="66">CENTRALISED</text>
+        <text class="f4aH" x="326" y="66">HUB AND SPOKE</text>
+        <text class="f4aH" x="606" y="66">FEDERATED</text>
+
+        <text class="f4aL" x="160" y="101" text-anchor="middle">CDO team</text>
+        <text class="f4aB" x="440" y="101" text-anchor="middle">Hub: CDO team</text>
+        <text class="f4aL" x="720" y="101" text-anchor="middle">CDO team</text>
+        <text class="f4aS" x="720" y="120" text-anchor="middle">standards only</text>
+
+        <text class="f4aS" x="76" y="191" text-anchor="middle">Claims</text>
+        <text class="f4aS" x="160" y="191" text-anchor="middle">Fraud</text>
+        <text class="f4aS" x="244" y="191" text-anchor="middle">Pricing</text>
+        <text class="f4aS" x="76" y="211" text-anchor="middle">asks</text>
+        <text class="f4aS" x="160" y="211" text-anchor="middle">asks</text>
+        <text class="f4aS" x="244" y="211" text-anchor="middle">asks</text>
+        <text class="f4aS" x="356" y="191" text-anchor="middle">Claims</text>
+        <text class="f4aS" x="440" y="191" text-anchor="middle">Fraud</text>
+        <text class="f4aS" x="524" y="191" text-anchor="middle">Pricing</text>
+        <text class="f4aS" x="636" y="191" text-anchor="middle">Claims</text>
+        <text class="f4aS" x="720" y="191" text-anchor="middle">Fraud</text>
+        <text class="f4aS" x="804" y="191" text-anchor="middle">Pricing</text>
+
+        <text class="f4aA" x="46" y="246">OPTIMISES</text>
+        <text class="f4aL" x="46" y="262">one standard, one team</text>
+        <text class="f4aA" x="46" y="282">BREAKS WHEN</text>
+        <text class="f4aL" x="46" y="298">the queue outgrows the team</text>
+        <text class="f4aA" x="326" y="246">OPTIMISES</text>
+        <text class="f4aL" x="326" y="262">a shared core, local speed</text>
+        <text class="f4aA" x="326" y="282">BREAKS WHEN</text>
+        <text class="f4aL" x="326" y="298">the hub does the spokes' work</text>
+        <text class="f4aA" x="606" y="246">OPTIMISES</text>
+        <text class="f4aL" x="606" y="262">domain speed and ownership</text>
+        <text class="f4aA" x="606" y="282">BREAKS WHEN</text>
+        <text class="f4aL" x="606" y="298">no one owns the shared record</text>
+
+        <text class="f4aN" x="30" y="332">Three common shapes with no single published source. Dots are people; Keelson's domains are constructed.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the shapes differ in one place: who sets the priorities of the person doing the work</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>What each shape is for, and the sentence you hear when it breaks<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p><strong>Centralised</strong> is the right first shape when there is almost nothing to share yet: one team, one standard, one place to hire. It breaks when demand outgrows the team, and you hear it as "we put a ticket in three months ago". <strong>Federated</strong> suits an organisation whose domains are mature and genuinely different; each domain moves at its own speed. It breaks on anything shared, and you hear it as "which customer number is the real one?", which is Keelson's diagnosis word for word.</p>
+        <p><strong>Hub-and-spoke</strong> tries to keep the shared parts central and the priorities local. The hub builds the customer and claims record once; the spokes in claims, fraud and pricing use it for their own decisions. It breaks when the hub keeps doing the spokes' work because it is faster to do it than to teach it, and you hear it as "the central team built our dashboard and now nobody here can change it".</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Choosing from the diagnosis, not from fashion<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Read your session 1 diagnosis and ask what it says is broken. If the crux is a shared record that nobody owns, a federated model makes it worse, because it hands the shared record to everyone and therefore to no one. If the crux is that the central team cannot hear the business, centralising further makes it worse. Keelson's diagnosis names both: the customer and claims data cannot be joined, and five pilots each rebuilt the same foundations. That points to a hub for the foundations and spokes close to the decisions.</p>
+        <p>The shape is also a stage, not a destination. Many organisations start central because there is no one in the domains to federate to, then move people out as the shared foundations become reliable. Write down the condition under which you would change shape, so the next change is a decision rather than a reorganisation by mood. Redesigning the wider organisation for AI is a different job, covered in <a href="https://phoebefu6.github.io/learn-leadership-ai-with-phoebe/">Leadership and AI ↗</a>.</p>
+      </div>
+    </details>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>The centre of excellence that became a queue.</strong> A familiar pattern in any organisation: a central analytics team is set up to "serve the business", delivers its first projects brilliantly, and two years later has a backlog nobody can see the end of. The business starts hiring its own analysts quietly, each building a private customer list. Without anyone deciding it, the organisation has drifted from centralised to an unplanned federation, with none of the standards a planned one would have kept.</p>
+    </div>
+  </section>
+
+  <section class="section" id="part-2">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · covers the CDO reporting line</span>
+      <h2>Where the CDO reports</h2>
+      <span class="tag concept">5 min live</span>
+    </div>
+    <p class="lede">The reporting line decides which conversations the CDO is in by default, and therefore which kind of value the data function is pulled toward. There are four common options: the CEO, the COO, the CFO, or the CIO or CTO. Each buys something real and costs something real. A single survey figure about CEO reporting is quoted everywhere, and it is worth reading carefully before anyone uses it as an argument.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 368" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Four reporting lines for a CDO with what each gains and risks. CEO, highlighted in brass: gains priorities set in the same room as strategy; risks scarce CEO time and no daily sponsor. COO: gains closeness to claims and daily operations; risks data seen only as an efficiency tool. CFO: gains budget discipline and one set of numbers; risks a pull toward reporting and defense only. CIO or CTO: gains platform and delivery under one roof; risks strategy turning into a technology plan. Below, two bars: CDAOs reporting to the CEO were 21 percent in Gartner's 2024 survey and 36 percent in the 2025 survey, as reported.">
+        <defs>
+          <filter id="f4bSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="47" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <pattern id="f4bHc" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(-38)"><line x1="0" y1="0" x2="0" y2="7" stroke="#0F1A6B" stroke-width="1" opacity=".5"/></pattern>
+          <marker id="f4bAr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#161A33" stroke-width="1.6" stroke-linecap="round"/></marker>
+        </defs>
+        <style>
+          .f4bH { font: 800 12px Inter, sans-serif; fill: #161A33; }
+          .f4bL { font: 600 12px Inter, sans-serif; fill: #161A33; }
+          .f4bS { font: 400 11px Inter, sans-serif; fill: #525773; }
+          .f4bB { font: 800 11px Inter, sans-serif; fill: #4A360C; }
+          .f4bV { font: 800 16px Inter, sans-serif; fill: #0A1150; }
+          .f4bA { font: 700 11px Inter, sans-serif; fill: #0F1A6B; }
+          .f4bN { font: 400 12px Inter, sans-serif; fill: #525773; }
+        </style>
+
+        <text class="f4bH" x="30" y="26">WHO THE CDO REPORTS TO, AND WHAT EACH LINE BUYS</text>
+
+        <g filter="url(#f4bSk)" fill="none" stroke="#161A33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="40" y="50" width="190" height="40" rx="10" transform="rotate(-1 135 70)" fill="#C9A45C"/>
+          <rect x="250" y="50" width="190" height="40" rx="10" transform="rotate(1 345 70)" fill="#FFFFFF"/>
+          <rect x="460" y="50" width="190" height="40" rx="10" transform="rotate(-0.6 555 70)" fill="#FFFFFF"/>
+          <rect x="670" y="50" width="190" height="40" rx="10" transform="rotate(0.8 765 70)" fill="#FFFFFF"/>
+          <rect x="40" y="104" width="190" height="66" rx="10" transform="rotate(0.5 135 137)" fill="#F8F1E2"/>
+          <rect x="250" y="104" width="190" height="66" rx="10" transform="rotate(-0.5 345 137)" fill="#EEF0FA"/>
+          <rect x="460" y="104" width="190" height="66" rx="10" transform="rotate(0.4 555 137)" fill="#EEF0FA"/>
+          <rect x="670" y="104" width="190" height="66" rx="10" transform="rotate(-0.4 765 137)" fill="#EEF0FA"/>
+          <rect x="40" y="182" width="190" height="66" rx="10" transform="rotate(-0.4 135 215)" fill="#FFFFFF"/>
+          <rect x="250" y="182" width="190" height="66" rx="10" transform="rotate(0.4 345 215)" fill="#FFFFFF"/>
+          <rect x="460" y="182" width="190" height="66" rx="10" transform="rotate(-0.3 555 215)" fill="#FFFFFF"/>
+          <rect x="670" y="182" width="190" height="66" rx="10" transform="rotate(0.3 765 215)" fill="#FFFFFF"/>
+          <rect x="160" y="284" width="168" height="16" rx="3" fill="url(#f4bHc)"/>
+          <rect x="160" y="314" width="288" height="16" rx="3" fill="url(#f4bHc)"/>
+        </g>
+
+        <text class="f4bL" x="135" y="75" text-anchor="middle">CEO</text>
+        <text class="f4bL" x="345" y="75" text-anchor="middle">COO</text>
+        <text class="f4bL" x="555" y="75" text-anchor="middle">CFO</text>
+        <text class="f4bL" x="765" y="75" text-anchor="middle">CIO or CTO</text>
+
+        <text class="f4bA" x="135" y="122" text-anchor="middle">GAINS</text>
+        <text class="f4bB" x="135" y="140" text-anchor="middle">priorities set in the</text>
+        <text class="f4bB" x="135" y="156" text-anchor="middle">same room as strategy</text>
+        <text class="f4bA" x="345" y="122" text-anchor="middle">GAINS</text>
+        <text class="f4bS" x="345" y="140" text-anchor="middle">close to claims and</text>
+        <text class="f4bS" x="345" y="156" text-anchor="middle">daily operations</text>
+        <text class="f4bA" x="555" y="122" text-anchor="middle">GAINS</text>
+        <text class="f4bS" x="555" y="140" text-anchor="middle">budget discipline and</text>
+        <text class="f4bS" x="555" y="156" text-anchor="middle">one set of numbers</text>
+        <text class="f4bA" x="765" y="122" text-anchor="middle">GAINS</text>
+        <text class="f4bS" x="765" y="140" text-anchor="middle">platform and delivery</text>
+        <text class="f4bS" x="765" y="156" text-anchor="middle">under one roof</text>
+
+        <text class="f4bA" x="135" y="200" text-anchor="middle">RISKS</text>
+        <text class="f4bS" x="135" y="218" text-anchor="middle">CEO time is scarce;</text>
+        <text class="f4bS" x="135" y="234" text-anchor="middle">no daily sponsor</text>
+        <text class="f4bA" x="345" y="200" text-anchor="middle">RISKS</text>
+        <text class="f4bS" x="345" y="218" text-anchor="middle">data seen as an</text>
+        <text class="f4bS" x="345" y="234" text-anchor="middle">efficiency tool only</text>
+        <text class="f4bA" x="555" y="200" text-anchor="middle">RISKS</text>
+        <text class="f4bS" x="555" y="218" text-anchor="middle">pulled toward reporting</text>
+        <text class="f4bS" x="555" y="234" text-anchor="middle">and defense only</text>
+        <text class="f4bA" x="765" y="200" text-anchor="middle">RISKS</text>
+        <text class="f4bS" x="765" y="218" text-anchor="middle">strategy turns into a</text>
+        <text class="f4bS" x="765" y="234" text-anchor="middle">technology plan</text>
+
+        <text class="f4bA" x="40" y="272">CDAOS REPORTING TO THE CEO, GARTNER SURVEYS (REPORTED)</text>
+        <text class="f4bL" x="40" y="297">2024 survey</text>
+        <text class="f4bV" x="338" y="298">21%</text>
+        <text class="f4bL" x="40" y="327">2025 survey</text>
+        <text class="f4bV" x="458" y="328">36%</text>
+        <text class="f4bS" x="530" y="297">one survey of 504 CDAOs, not a norm</text>
+        <text class="f4bS" x="530" y="317">most still report somewhere else</text>
+
+        <text class="f4bN" x="30" y="354">Trade-offs are common practice, not a study. Survey figures from Gartner 2025 (reported).</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - each line pulls the data function toward its boss's problems; choose the pull you want</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Reading the 36 percent honestly<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Gartner's 2025 CDAO Agenda Survey (504 respondents, fielded September to November 2024, reported) found 36 percent of chief data and analytics officers report to the CEO, up from 21 percent in the 2024 survey. The same release reported that 70 percent hold primary responsibility for AI strategy and operating model. The press releases could not be opened at source, so these are reported figures, consistent across trade coverage.</p>
+        <p>What the number can carry: reporting to the CEO is becoming more common among the people who answer Gartner surveys. What it cannot carry: that CEO reporting works better, or that you should ask for it. A survey of who reports where says nothing about outcomes, and most respondents still report elsewhere. If you use the figure in a conversation with your sponsor, use it as "this is moving", never as "this is the norm".</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Tenure numbers, and where the role's own research lives<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Talks about the CDO role often open with an average tenure, usually short and alarming. Several such numbers circulate. None that could be traced for this page had a readable method; each was a vendor or survey claim with no description of who was asked or how tenure was counted. Treat them the way session 1 treats "80 percent of data projects fail": a story people tell, not evidence, and never a line in a board paper.</p>
+        <p>The role does have a long-running research community. The MIT Chief Data Officer and Information Quality programme grew out of MIT's Total Data Quality Management programme (1988), took the CDOIQ name in 2008, and runs an annual symposium chaired by Richard Wang (reported). It is a useful place to hear how peers set up their teams; read what is presented there as practitioner experience, not as measured findings.</p>
+      </div>
+    </details>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>Keelson's line, for now.</strong> Maya reports to Tom, the COO (constructed). That is a fine line for CDQ and CFT, which are operational, and a risk for anything offensive later, such as pricing. Maya writes the risk down with a trigger: "If the second wave of bets is mainly pricing and growth, we revisit the line with the CEO." A reporting line chosen with a stated trigger is a decision; one inherited from whoever sponsored the hire is an accident.</p>
+    </div>
+  </section>
+
+  <section class="section" id="part-3">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · covers domain ownership and minimum governance</span>
+      <h2>Just enough governance to ship</h2>
+      <span class="tag concept">5 min live</span>
+    </div>
+    <p class="lede">DAMA-DMBOK, the second edition of DAMA International's body of knowledge (2017), organises data management into 11 knowledge areas with data governance at the centre of the wheel (reported). It is a map of everything a mature function eventually does, and a new CDO who tries to stand up all of it before shipping anything will ship nothing. Three bets need three things: the critical data elements each bet depends on, one named owner for each bet's data, and one forum where disagreements get decided.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 352" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three columns, one per bet. CDQ claims data at source depends on loss amount at first notice, claim status and its date, and policy number on the claim; owner Priya Natarajan. FTR fraud triage depends on one customer ID per person, prior claims per customer, and the first-notice description; owner Elena Ruiz. CFT claims fast-track depends on loss amount at first notice, claim type and cover, and customer ID on the claim; owner Priya Natarajan. All three owners feed one decision forum, highlighted in brass: monthly, chaired by Tom, run by Maya.">
+        <defs>
+          <filter id="f4cSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="53" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <pattern id="f4cHc" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(-38)"><line x1="0" y1="0" x2="0" y2="7" stroke="#0F1A6B" stroke-width="1" opacity=".5"/></pattern>
+          <marker id="f4cAr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#161A33" stroke-width="1.6" stroke-linecap="round"/></marker>
+        </defs>
+        <style>
+          .f4cH { font: 800 12px Inter, sans-serif; fill: #161A33; }
+          .f4cL { font: 600 12px Inter, sans-serif; fill: #161A33; }
+          .f4cS { font: 400 11px Inter, sans-serif; fill: #525773; }
+          .f4cB { font: 800 11px Inter, sans-serif; fill: #4A360C; }
+          .f4cW { font: 800 12px Inter, sans-serif; fill: #FFFFFF; }
+          .f4cA { font: 700 11px Inter, sans-serif; fill: #0F1A6B; }
+          .f4cN { font: 400 12px Inter, sans-serif; fill: #525773; }
+        </style>
+
+        <text class="f4cH" x="30" y="26">THE MINIMUM THAT LETS THREE BETS SHIP</text>
+
+        <g filter="url(#f4cSk)" fill="none" stroke="#161A33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="40" y="44" width="240" height="34" rx="8" transform="rotate(-0.6 160 61)" fill="#0F1A6B"/>
+          <rect x="320" y="44" width="240" height="34" rx="8" transform="rotate(0.5 440 61)" fill="#0F1A6B"/>
+          <rect x="600" y="44" width="240" height="34" rx="8" transform="rotate(-0.4 720 61)" fill="#0F1A6B"/>
+
+          <rect x="50" y="108" width="220" height="24" rx="4" transform="rotate(-1 160 120)" fill="#FFFFFF"/>
+          <rect x="50" y="138" width="220" height="24" rx="4" transform="rotate(0.8 160 150)" fill="#FFFFFF"/>
+          <rect x="50" y="168" width="220" height="24" rx="4" transform="rotate(-0.6 160 180)" fill="#FFFFFF"/>
+          <rect x="330" y="108" width="220" height="24" rx="4" transform="rotate(0.9 440 120)" fill="url(#f4cHc)"/>
+          <rect x="330" y="138" width="220" height="24" rx="4" transform="rotate(-0.7 440 150)" fill="#FFFFFF"/>
+          <rect x="330" y="168" width="220" height="24" rx="4" transform="rotate(0.6 440 180)" fill="#FFFFFF"/>
+          <rect x="610" y="108" width="220" height="24" rx="4" transform="rotate(-0.8 720 120)" fill="#FFFFFF"/>
+          <rect x="610" y="138" width="220" height="24" rx="4" transform="rotate(0.7 720 150)" fill="#FFFFFF"/>
+          <rect x="610" y="168" width="220" height="24" rx="4" transform="rotate(-0.9 720 180)" fill="url(#f4cHc)"/>
+
+          <rect x="50" y="206" width="220" height="34" rx="8" transform="rotate(0.5 160 223)" fill="#EEF0FA"/>
+          <rect x="330" y="206" width="220" height="34" rx="8" transform="rotate(-0.5 440 223)" fill="#EEF0FA"/>
+          <rect x="610" y="206" width="220" height="34" rx="8" transform="rotate(0.4 720 223)" fill="#EEF0FA"/>
+
+          <path d="M160 244 L160 266" marker-end="url(#f4cAr)"/>
+          <path d="M440 244 L440 266" marker-end="url(#f4cAr)"/>
+          <path d="M720 244 L720 266" marker-end="url(#f4cAr)"/>
+
+          <rect x="40" y="270" width="800" height="48" rx="10" transform="rotate(-0.3 440 294)" fill="#C9A45C"/>
+          <path d="M790 284 L812 284 M801 284 L801 306 M792 306 L810 306"/>
+        </g>
+
+        <text class="f4cW" x="160" y="66" text-anchor="middle">CDQ CLAIMS DATA AT SOURCE</text>
+        <text class="f4cW" x="440" y="66" text-anchor="middle">FTR FRAUD TRIAGE</text>
+        <text class="f4cW" x="720" y="66" text-anchor="middle">CFT CLAIMS FAST-TRACK</text>
+
+        <text class="f4cA" x="50" y="100">CRITICAL DATA ELEMENTS</text>
+        <text class="f4cA" x="330" y="100">CRITICAL DATA ELEMENTS</text>
+        <text class="f4cA" x="610" y="100">CRITICAL DATA ELEMENTS</text>
+
+        <text class="f4cS" x="62" y="124">loss amount at first notice</text>
+        <text class="f4cS" x="62" y="154">claim status and its date</text>
+        <text class="f4cS" x="62" y="184">policy number on the claim</text>
+        <text class="f4cS" x="342" y="124">one customer ID per person</text>
+        <text class="f4cS" x="342" y="154">prior claims per customer</text>
+        <text class="f4cS" x="342" y="184">first-notice description</text>
+        <text class="f4cS" x="622" y="124">loss amount at first notice</text>
+        <text class="f4cS" x="622" y="154">claim type and cover</text>
+        <text class="f4cS" x="622" y="184">customer ID on the claim</text>
+
+        <text class="f4cL" x="160" y="228" text-anchor="middle">Owner: Priya Natarajan</text>
+        <text class="f4cL" x="440" y="228" text-anchor="middle">Owner: Elena Ruiz</text>
+        <text class="f4cL" x="720" y="228" text-anchor="middle">Owner: Priya Natarajan</text>
+
+        <text class="f4cH" x="60" y="290">ONE DECISION FORUM</text>
+        <text class="f4cB" x="60" y="308">monthly, chaired by Tom, run by Maya: owners settle definitions and conflicts</text>
+
+        <text class="f4cN" x="30" y="342">Elements, owners and forum are constructed for Keelson. Hatched: the customer ID, shared by two bets.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - nine data elements, two owners, one room; that is the whole governance programme for the first year</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The three-part minimum<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p><strong>Critical data elements.</strong> For each bet, list the handful of fields it cannot work without, and define each one in a sentence the owner signs. CDQ needs the loss amount captured at first notice, not at settlement; FTR needs one customer ID per person. Nine elements for three bets is a list a claims team can actually keep. A data dictionary of every field in the policy system is not.</p>
+        <p><strong>One owner per bet's data.</strong> A business person, not the CDO, who answers for the definition and quality of those elements, because they own the decision the data feeds. <strong>One decision forum.</strong> Somewhere a definition dispute ends: Priya wants "claim opened" to mean the first call, Ben wants it to mean the first reserve. The forum decides, records why, and moves on. Without it the dispute ends in whichever team builds first.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>The DAMA wheel, as a map rather than a plan<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>DAMA-DMBOK (2nd edition, 2017) lists 11 knowledge areas around governance at the centre: data governance, architecture, modelling and design, storage and operations, security, integration and interoperability, documents and content, reference and master data, warehousing and business intelligence, metadata, and data quality (reported). Some descriptions count 10, because the wheel graphic sets governance apart from the other ten. Either count is the same content.</p>
+        <p>Use the wheel to check what your minimum leaves out on purpose, not as a list to staff. Keelson's three bets touch data quality (CDQ), reference and master data (the customer ID), and metadata (the element definitions); everything else waits until a bet needs it. Policies, stewardship programmes, metadata tooling and maturity models are real work, taught in depth in <a href="https://phoebefu6.github.io/learn-data-governance-with-phoebe/">Data Governance ↗</a>. Tonight's job is the smallest slice that lets the bets start.</p>
+      </div>
+    </details>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>The governance programme with no customer.</strong> A familiar pattern in any organisation: a governance council is chartered, a policy framework is drafted across every knowledge area, and stewards are named for domains no project is touching. A year in, attendance falls, because nothing on the agenda is blocking anyone's work. Governance tied to three live bets has the opposite problem: the agenda writes itself, because every meeting has a decision someone is waiting for.</p>
+    </div>
+  </section>
+
+  <section class="section" id="demo-1">
+    <div class="section-kicker">
+      <span class="klabel">Build-along</span>
+      <h2>Keelson's model and who does what</h2>
+      <span class="tag demo">★ 22 min · everyone builds</span>
+    </div>
+    <p class="lede">Tonight's page of Keelson's strategy answers "who delivers". Maya picks a team shape from the diagnosis, records the reporting line with its trigger, names the owners, and writes a RACI for CDQ, FTR and CFT: R does the work, A answers for the outcome (exactly one per row), C is consulted before, I is told after. Every name and letter is constructed; if you are working on your own organisation, your letters will differ, and they should.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 286" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A RACI grid for Keelson's three bets against five people. CDQ claims at source: Maya R, Tom I, Priya A, Ben C, Elena C. FTR fraud triage: Maya R, Tom I, Priya C, Ben I, Elena A. CFT fast-track: Maya R, Tom I, Priya A, Ben C, Elena I. The A cells, one per row, are highlighted in brass.">
+        <defs>
+          <filter id="f4dSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="59" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <pattern id="f4dHc" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(-38)"><line x1="0" y1="0" x2="0" y2="7" stroke="#0F1A6B" stroke-width="1" opacity=".5"/></pattern>
+          <marker id="f4dAr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#161A33" stroke-width="1.6" stroke-linecap="round"/></marker>
+        </defs>
+        <style>
+          .f4dH { font: 800 12px Inter, sans-serif; fill: #161A33; }
+          .f4dL { font: 600 12px Inter, sans-serif; fill: #161A33; }
+          .f4dS { font: 400 11px Inter, sans-serif; fill: #525773; }
+          .f4dV { font: 800 18px Inter, sans-serif; fill: #0A1150; }
+          .f4dA { font: 700 11px Inter, sans-serif; fill: #0F1A6B; }
+          .f4dN { font: 400 12px Inter, sans-serif; fill: #525773; }
+        </style>
+
+        <text class="f4dH" x="30" y="26">KEELSON'S RACI: ONE A PER ROW</text>
+
+        <g filter="url(#f4dSk)" fill="none" stroke="#161A33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="40" y="44" width="196" height="44" rx="6" transform="rotate(-0.5 138 66)" fill="url(#f4dHc)"/>
+          <rect x="246" y="44" width="104" height="44" rx="6" transform="rotate(0.6 298 66)" fill="#EEF0FA"/>
+          <rect x="356" y="44" width="104" height="44" rx="6" transform="rotate(-0.6 408 66)" fill="#EEF0FA"/>
+          <rect x="466" y="44" width="104" height="44" rx="6" transform="rotate(0.5 518 66)" fill="#EEF0FA"/>
+          <rect x="576" y="44" width="104" height="44" rx="6" transform="rotate(-0.5 628 66)" fill="#EEF0FA"/>
+          <rect x="686" y="44" width="104" height="44" rx="6" transform="rotate(0.6 738 66)" fill="#EEF0FA"/>
+
+          <rect x="40" y="96" width="196" height="38" rx="6" transform="rotate(0.4 138 115)" fill="#FFFFFF"/>
+          <rect x="246" y="96" width="104" height="38" rx="6" transform="rotate(-0.8 298 115)" fill="#FFFFFF"/>
+          <rect x="356" y="96" width="104" height="38" rx="6" transform="rotate(0.7 408 115)" fill="#FFFFFF"/>
+          <rect x="466" y="96" width="104" height="38" rx="6" transform="rotate(-1.2 518 115)" fill="#C9A45C"/>
+          <rect x="576" y="96" width="104" height="38" rx="6" transform="rotate(0.8 628 115)" fill="#FFFFFF"/>
+          <rect x="686" y="96" width="104" height="38" rx="6" transform="rotate(-0.7 738 115)" fill="#FFFFFF"/>
+
+          <rect x="40" y="140" width="196" height="38" rx="6" transform="rotate(-0.4 138 159)" fill="#FFFFFF"/>
+          <rect x="246" y="140" width="104" height="38" rx="6" transform="rotate(0.7 298 159)" fill="#FFFFFF"/>
+          <rect x="356" y="140" width="104" height="38" rx="6" transform="rotate(-0.8 408 159)" fill="#FFFFFF"/>
+          <rect x="466" y="140" width="104" height="38" rx="6" transform="rotate(0.6 518 159)" fill="#FFFFFF"/>
+          <rect x="576" y="140" width="104" height="38" rx="6" transform="rotate(-0.7 628 159)" fill="#FFFFFF"/>
+          <rect x="686" y="140" width="104" height="38" rx="6" transform="rotate(1.2 738 159)" fill="#C9A45C"/>
+
+          <rect x="40" y="184" width="196" height="38" rx="6" transform="rotate(0.5 138 203)" fill="#FFFFFF"/>
+          <rect x="246" y="184" width="104" height="38" rx="6" transform="rotate(-0.6 298 203)" fill="#FFFFFF"/>
+          <rect x="356" y="184" width="104" height="38" rx="6" transform="rotate(0.8 408 203)" fill="#FFFFFF"/>
+          <rect x="466" y="184" width="104" height="38" rx="6" transform="rotate(1 518 203)" fill="#C9A45C"/>
+          <rect x="576" y="184" width="104" height="38" rx="6" transform="rotate(-0.8 628 203)" fill="#FFFFFF"/>
+          <rect x="686" y="184" width="104" height="38" rx="6" transform="rotate(0.7 738 203)" fill="#FFFFFF"/>
+
+          <path d="M808 104 L836 104 M808 104 L808 126 L836 126 L836 104 M814 112 L830 112 M814 119 L826 119"/>
+        </g>
+
+        <text class="f4dA" x="52" y="70">BET</text>
+        <text class="f4dL" x="298" y="62" text-anchor="middle">Maya</text>
+        <text class="f4dS" x="298" y="78" text-anchor="middle">CDO</text>
+        <text class="f4dL" x="408" y="62" text-anchor="middle">Tom</text>
+        <text class="f4dS" x="408" y="78" text-anchor="middle">COO</text>
+        <text class="f4dL" x="518" y="62" text-anchor="middle">Priya</text>
+        <text class="f4dS" x="518" y="78" text-anchor="middle">claims</text>
+        <text class="f4dL" x="628" y="62" text-anchor="middle">Ben</text>
+        <text class="f4dS" x="628" y="78" text-anchor="middle">actuary</text>
+        <text class="f4dL" x="738" y="62" text-anchor="middle">Elena</text>
+        <text class="f4dS" x="738" y="78" text-anchor="middle">risk</text>
+
+        <text class="f4dL" x="52" y="120">CDQ claims at source</text>
+        <text class="f4dL" x="52" y="164">FTR fraud triage</text>
+        <text class="f4dL" x="52" y="208">CFT fast-track</text>
+
+        <text class="f4dV" x="298" y="122" text-anchor="middle">R</text>
+        <text class="f4dV" x="408" y="122" text-anchor="middle">I</text>
+        <text class="f4dV" x="518" y="122" text-anchor="middle">A</text>
+        <text class="f4dV" x="628" y="122" text-anchor="middle">C</text>
+        <text class="f4dV" x="738" y="122" text-anchor="middle">C</text>
+        <text class="f4dV" x="298" y="166" text-anchor="middle">R</text>
+        <text class="f4dV" x="408" y="166" text-anchor="middle">I</text>
+        <text class="f4dV" x="518" y="166" text-anchor="middle">C</text>
+        <text class="f4dV" x="628" y="166" text-anchor="middle">I</text>
+        <text class="f4dV" x="738" y="166" text-anchor="middle">A</text>
+        <text class="f4dV" x="298" y="210" text-anchor="middle">R</text>
+        <text class="f4dV" x="408" y="210" text-anchor="middle">I</text>
+        <text class="f4dV" x="518" y="210" text-anchor="middle">A</text>
+        <text class="f4dV" x="628" y="210" text-anchor="middle">C</text>
+        <text class="f4dV" x="738" y="210" text-anchor="middle">I</text>
+
+        <text class="f4dS" x="40" y="248">R does the work · A answers for it, one per row · C consulted before · I told after</text>
+        <text class="f4dN" x="30" y="272">Constructed for Keelson. Your names and letters will differ.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - read down the brass cells: every bet has exactly one person who answers for it, and it is never the CDO</figcaption>
+    </figure>
+
+    <div class="steps">
+      <div class="step">
+        <p><strong>Choose the shape from the diagnosis.</strong> Score each shape against the two halves of Keelson's crux: does it fix the shared record, and does it keep the work close to the decisions?</p>
+        <div class="prompt-box good"><span class="label">★ Step 1 · shape against the crux (constructed)</span>                 fixes the shared    keeps work close
+                 customer + claims   to the decisions
+                 record?
+Centralised      yes                 no (claims queue)
+Federated        no (3 IDs again)    yes
+Hub-and-spoke    yes (hub builds)    yes (spokes use)
+
+Choice: hub-and-spoke. Hub = Maya's team, builds the
+customer and claims record once. Spokes = analysts
+sitting in claims and in fraud.</div>
+      </div>
+      <div class="step">
+        <p><strong>Record the reporting line and its trigger.</strong> One line for where Maya reports today, one for the condition that would reopen it. The trigger is what makes it a decision rather than an inheritance.</p>
+        <div class="prompt-box good"><span class="label">★ Step 2 · reporting line</span>Today:   Maya reports to Tom (COO), who sponsored the role.
+Why:     the first three bets are operational (claims, fraud).
+Trigger: if the next wave of bets is mainly pricing and
+         growth, revisit the line with the CEO.</div>
+      </div>
+      <div class="step">
+        <p><strong>List the critical data elements per bet.</strong> Three per bet is plenty. Mark any element two bets share, because that is where a definition fight will start.</p>
+        <div class="prompt-box good"><span class="label">★ Step 3 · critical data elements (constructed)</span>CDQ  loss amount at first notice      (shared with CFT)
+     claim status and its date
+     policy number on the claim
+FTR  one customer ID per person        (shared with CFT)
+     prior claims per customer
+     first-notice description
+CFT  loss amount at first notice
+     claim type and cover
+     customer ID on the claim</div>
+      </div>
+      <div class="step">
+        <p><strong>Name one owner for each bet's data.</strong> The owner is the business person whose decision the data feeds. If two people both claim it, that is the forum's first agenda item, not a reason to name both.</p>
+        <div class="prompt-box good"><span class="label">★ Step 4 · owners</span>CDQ  Priya Natarajan, head of claims
+     (her handlers capture the amount at first notice)
+FTR  Elena Ruiz, chief risk officer
+     (fraud referral decisions sit in her function)
+CFT  Priya Natarajan, head of claims
+     (fast-track is a claims-handling decision)</div>
+      </div>
+      <div class="step">
+        <p><strong>Fill the RACI, then check it.</strong> Exactly one A per row. The CDO's team is usually R on foundations and rarely A on a business outcome; if Maya is A on a bet, ask whose decision it really is.</p>
+        <div class="prompt-box good"><span class="label">★ Step 5 · RACI with three checks</span>        Maya  Tom  Priya  Ben  Elena
+CDQ      R     I     A     C     C
+FTR      R     I     C     I     A
+CFT      R     I     A     C     I
+
+Check 1: one A per row?                yes
+Check 2: is the CDO ever A?            no
+Check 3: is everyone who signs a
+         number at least C or I?       yes (Ben on reserves)</div>
+      </div>
+      <div class="step">
+        <p><strong>Charter the forum in four lines.</strong> Who chairs, who comes, how often, and what it decides. Anything it does not decide goes back to the owner.</p>
+        <div class="prompt-box good"><span class="label">★ Step 6 · decision forum charter</span>Chair:    Tom Reyes (COO). Run by: Maya Okafor.
+Members:  the three bet owners; Ben for anything
+          touching reserves.
+Cadence:  monthly, 60 minutes, plus ad hoc when a bet
+          is blocked.
+Decides:  definitions of the nine elements, conflicts
+          between bets, and when a bet is ready to ship.</div>
+      </div>
+    </div>
+
+    <div class="callout tip">
+      <p><strong>Test the RACI on a real disagreement.</strong> Before Maya circulates the page, she runs one live dispute through it: Priya and Ben disagree on when a claim counts as opened. The RACI says Priya is A for CDQ and Ben is C, so Priya decides after hearing Ben, and the forum records the definition. If the document cannot settle the first real argument, rewrite it before anyone relies on it.</p>
+    </div>
+  </section>
+
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Before session 5</h2>
+      <span class="tag exercise">30 min</span>
+    </div>
+    <ol>
+      <li><strong>Name your current shape honestly.</strong> Not the one on the org chart, the one in practice: who sets the priorities of the analysts who actually do the work?</li>
+      <li><strong>Write your reporting line and its trigger.</strong> Where you report today, what that line pulls you toward, and the condition under which you would ask to change it.</li>
+      <li><strong>List the critical data elements for your first three bets.</strong> Three per bet, with the elements two bets share marked.</li>
+      <li><strong>Draft a RACI with one A per row,</strong> then run one disagreement you have already seen through it. Bring it to session 5, where each bet gets funded and measured.</li>
+    </ol>
+  </section>
+
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions</h2>
+    </div>
+    <p>Clear all three and session 4 gets stamped in your passport.</p>
+
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">1 · Keelson's diagnosis says the customer record cannot be joined and every pilot rebuilt the same foundations. Which shape follows from it?</p>
+      <button class="qopt" type="button">A · Hub-and-spoke: the hub builds the shared customer and claims record once, and spokes in claims and fraud use it for their own decisions</button>
+      <button class="qopt" type="button">B · Federated: each domain builds what it needs, at its own speed</button>
+      <button class="qopt" type="button">C · Centralised forever: every analyst in one team, every request in one queue</button>
+      <button class="qopt" type="button">D · Whichever shape the largest peer insurer uses</button>
+      <p class="qwhy">Federated hands the shared record to everyone and so to no one, which is the problem Keelson already has. Fully centralised fixes the record but puts claims and fraud in a queue. A peer's shape answers a peer's diagnosis, not yours.</p>
+    </div>
+
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">2 · A board member says "36 percent of CDAOs now report to the CEO, so ours should too." What is the honest reply?</p>
+      <button class="qopt" type="button">A · Agree: the survey shows CEO reporting produces better outcomes</button>
+      <button class="qopt" type="button">B · Disagree: the figure is folklore with no source</button>
+      <button class="qopt" type="button">C · It is one reported survey of 504 CDAOs showing the share rose from 21 percent; it says the practice is spreading, not that it works better, and most still report elsewhere</button>
+      <button class="qopt" type="button">D · It proves the COO is the wrong line</button>
+      <p class="qwhy">The figure has a real source, Gartner's 2025 CDAO Agenda Survey, so it is not folklore; it is reported because the release could not be opened. A survey of where people report measures prevalence, not results. Choose the line from your bets, and write down what would make you change it.</p>
+    </div>
+
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">3 · What is the minimum governance that lets three bets ship?</p>
+      <button class="qopt" type="button">A · A policy for each of DAMA-DMBOK's 11 knowledge areas before any bet starts</button>
+      <button class="qopt" type="button">B · Critical data elements for each bet, one business owner for each bet's data, and one forum where definition disputes are decided</button>
+      <button class="qopt" type="button">C · A data catalogue covering every field in the policy system</button>
+      <button class="qopt" type="button">D · The CDO as owner of all data, so there is one person to ask</button>
+      <p class="qwhy">The wheel is a map of what a mature function eventually does, not a precondition. A full catalogue is work no bet is waiting for. The owner should be the person whose decision the data feeds, which is rarely the CDO.</p>
+    </div>
+
+    <p class="quiz-score"></p>
+  </section>
+
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Sources covered</span>
+      <h2>What this session teaches, and where it came from</h2>
+    </div>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Centralised, hub-and-spoke and federated models</span><span class="note">Common practice described widely; no single published source defines the three, so what each optimises and how it breaks is stated as practitioner judgement</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Gartner (2025), CDAO Agenda Survey press releases</span><span class="note">36 percent report to the CEO, up from 21 percent in 2024; 70 percent hold primary responsibility for AI strategy and operating model. Reported: the press release pages could not be opened</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">DAMA International (2017), DAMA-DMBOK, 2nd ed.</span><span class="note">11 knowledge areas with governance at the centre; some descriptions count 10. Reported via secondary descriptions</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">MIT CDOIQ programme</span><span class="note">Grew from MIT's Total Data Quality Management programme (1988), named CDOIQ in 2008, symposium chaired by Richard Wang. Reported</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">CDO tenure figures</span><span class="note">Not used: every figure found lacked a readable method; taught as circulating claims, never as evidence</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Keelson Mutual, its model, owners, RACI and forum</span><span class="note">Constructed for teaching; no letter or number about them is a measurement</span></div>
+    </div>
+    <p class="mono" style="margin-top:14px">Every fact on this page, and its verification tier, is recorded in the course's source map.</p>
+  </section>
+
+  <section class="cheat" id="cheatsheet">
+    <h3>Session 4 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>The shape question</b><span>Where do the data people sit, and who sets their priorities? The three shapes differ only there.</span></div>
+      <div class="cheat-item"><b>Shape from the crux</b><span>A shared record nobody owns points to a hub. Never federate the thing that is broken.</span></div>
+      <div class="cheat-item"><b>Line plus trigger</b><span>Write where you report and the condition that would change it. Otherwise it is an inheritance.</span></div>
+      <div class="cheat-item"><b>Read 36 percent carefully</b><span>One reported survey, prevalence not outcomes. "This is moving", never "this is the norm".</span></div>
+      <div class="cheat-item"><b>The minimum</b><span>Critical data elements per bet, one business owner per bet's data, one decision forum.</span></div>
+      <div class="cheat-item"><b>One A per row</b><span>The owner of the decision answers for the bet. If the CDO is A, ask whose decision it really is.</span></div>
+    </div>
+  </section>
+
+  <div class="callout next">
+    <span class="nx-pill">Next session</span>
+    <p>Keelson knows who delivers CDQ, FTR and CFT. Session 5 decides how they are paid for, central budget, chargeback or staged bet funding, and gives each bet one leading and one lagging value signal, so the board can see progress before the lagging numbers move.</p>
+  </div>
+
+  <footer class="pagefoot">
+    <span>Session 4 of 6 · learn-data-strategy-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="03-the-first-three-bets.html">← Prev: The first three bets</a> &nbsp;·&nbsp; <a href="05-funding-and-value-tracking.html">Next: Funding and value tracking →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>

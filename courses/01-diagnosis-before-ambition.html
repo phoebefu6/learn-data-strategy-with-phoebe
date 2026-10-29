@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- social:start -->
+<meta name="description" content="Session 1 of 6. A new CDO's first job is to say what is actually going on before promising anything. Rumelt's kernel applied to data, a 30-day listening tour, the four ways data strategies fail, and Keelson Mutual's one-paragraph diagnosis written from interview notes.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Learn with Phoebe">
+<meta property="og:title" content="Diagnosis before ambition - learn data strategy with phoebe">
+<meta property="og:description" content="Session 1 of 6. A data strategy starts with a diagnosis, not a list of projects. Listen for 30 days, name the crux, write one paragraph.">
+<meta property="og:url" content="https://phoebefu6.github.io/learn-data-strategy-with-phoebe/courses/01-diagnosis-before-ambition.html">
+<meta property="og:image" content="https://phoebefu6.github.io/learn-data-strategy-with-phoebe/assets/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Diagnosis before ambition - learn data strategy with phoebe">
+<meta name="twitter:description" content="Session 1 of 6. Rumelt's kernel for data, the listening tour, and a one-paragraph diagnosis.">
+<meta name="twitter:image" content="https://phoebefu6.github.io/learn-data-strategy-with-phoebe/assets/og-cover.png">
+<!-- social:end -->
+<title>Session 1 · Diagnosis before ambition - learn data strategy with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-data-strategy-with-phoebe</a> / Session 1 of 6</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn Data Strategy with Phoebe · Session 1 of 6</div>
+    <h1><span class="accent">Diagnosis</span> before ambition</h1>
+    <p class="sub">A new chief data officer is usually handed two things in the first week: a deadline for "the data strategy" and a list of projects other people already want. The temptation is to rank the list, add a platform, and call it a strategy. Tonight we do the step that comes first and is skipped most often: saying, in one paragraph, what is actually going on. Rumelt's kernel gives the shape, a 30-day listening tour gives the evidence, and four familiar failure patterns show what happens without it.</p>
+    <div class="chip-row">
+      <span class="chip level">🟢 Foundations</span>
+      <span class="chip audience">New and aspiring CDOs, CDAOs, Heads of Data</span>
+      <span class="chip audience">No tools needed</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:4">3-18 · Kernel, tour, failure</span>
+      <span class="a3" style="flex:5">18-40 · Build-along: Keelson's diagnosis</span>
+      <span class="a4" style="flex:1">40-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Where we start</h2>
+    </div>
+    <p class="lede">The running case is constructed. Keelson Mutual is an invented mid-size insurer: motor, home and small-business cover, a regulator that reads its reports closely, a policy system older than most of its staff, and a claims system bolted on later. Maya Okafor joined six weeks ago as Keelson's first chief data officer. Tom Reyes, the chief operating officer, sponsored the role and has told the board a data strategy will be ready in 90 days. On Maya's desk sits a spreadsheet of 40 requests from across the company. Everything Maya does across the six sessions adds one page to Keelson's strategy, and every Keelson person and number is invented for teaching.</p>
+
+    <div class="legend">
+      <span class="pill">🎫 Clear all three quiz questions to stamp your passport</span>
+      <span class="pill">Live = presented in the 45 minutes</span>
+      <span class="pill">Self-study = the full depth, after class</span>
+      <span class="pill">★ Build-along = write it yourself</span>
+    </div>
+
+    <div class="callout win">
+      <p><strong>★ What you walk out with tonight.</strong> The three parts of a strategy and the test that tells a diagnosis from a goal, a four-week listening plan you can start on Monday, the four ways a data strategy fails with the sentence each one sounds like, and a one-paragraph diagnosis for Keelson that you can rewrite for your own organisation.</p>
+    </div>
+  </section>
+
+  <section class="section" id="part-1">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers Rumelt's kernel, applied to data</span>
+      <h2>A strategy is not a list of projects</h2>
+      <span class="tag concept">5 min live</span>
+    </div>
+    <p class="lede">Richard Rumelt's <em>Good Strategy / Bad Strategy</em> (2011) argues that a strategy has a kernel of three parts: a diagnosis that says what is going on, a guiding policy that says how you will deal with it, and coherent actions that carry the policy out and reinforce each other. A list of 40 ranked requests has none of the three. It has no diagnosis, so it cannot rule anything out, and its order usually reflects who asked most loudly.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two panels. On the left, a pile of six project requests: new lakehouse, AI pilot, BI refresh, data catalogue, claims chatbot, and 35 more; no challenge is named, so nothing is ruled out. On the right, Rumelt's kernel as three stacked boxes joined by arrows: diagnosis, highlighted in brass, then guiding policy, then coherent actions.">
+        <defs>
+          <filter id="f1aSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="13" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <pattern id="f1aHc" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(-38)"><line x1="0" y1="0" x2="0" y2="7" stroke="#0F1A6B" stroke-width="1" opacity=".5"/></pattern>
+          <marker id="f1aAr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#161A33" stroke-width="1.6" stroke-linecap="round"/></marker>
+        </defs>
+        <style>
+          .f1aH { font: 800 12px Inter, sans-serif; fill: #161A33; }
+          .f1aL { font: 600 12px Inter, sans-serif; fill: #161A33; }
+          .f1aS { font: 400 11px Inter, sans-serif; fill: #525773; }
+          .f1aB { font: 800 11px Inter, sans-serif; fill: #4A360C; }
+          .f1aR { font: 800 12px Inter, sans-serif; fill: #991B1B; }
+          .f1aN { font: 400 12px Inter, sans-serif; fill: #525773; }
+        </style>
+
+        <text class="f1aH" x="30" y="26">THE SAME 90 DAYS, TWO DOCUMENTS</text>
+
+        <g filter="url(#f1aSk)" fill="none" stroke="#161A33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="40" y="44" width="380" height="234" rx="12" transform="rotate(-0.4 230 161)" fill="#FEF2F2" stroke="#FCA5A5"/>
+          <rect x="60" y="92" width="160" height="32" rx="4" transform="rotate(-2 140 108)" fill="#FFFFFF"/>
+          <rect x="240" y="92" width="160" height="32" rx="4" transform="rotate(2 320 108)" fill="#FFFFFF"/>
+          <rect x="60" y="136" width="160" height="32" rx="4" transform="rotate(1.5 140 152)" fill="#FFFFFF"/>
+          <rect x="240" y="136" width="160" height="32" rx="4" transform="rotate(-1.5 320 152)" fill="#FFFFFF"/>
+          <rect x="60" y="180" width="160" height="32" rx="4" transform="rotate(-1 140 196)" fill="#FFFFFF"/>
+          <rect x="240" y="180" width="160" height="32" rx="4" transform="rotate(2.5 320 196)" fill="url(#f1aHc)"/>
+          <rect x="460" y="44" width="380" height="234" rx="12" transform="rotate(0.3 650 161)" fill="#EEF0FA"/>
+          <rect x="490" y="84" width="320" height="44" rx="8" fill="#C9A45C"/>
+          <rect x="490" y="148" width="320" height="44" rx="8" fill="#FFFFFF"/>
+          <rect x="490" y="212" width="320" height="44" rx="8" fill="#FFFFFF"/>
+          <path d="M650 130 L650 144" marker-end="url(#f1aAr)"/>
+          <path d="M650 194 L650 208" marker-end="url(#f1aAr)"/>
+        </g>
+
+        <text class="f1aR" x="58" y="72">A LIST OF PROJECTS</text>
+        <text class="f1aS" x="140" y="112" text-anchor="middle">new lakehouse</text>
+        <text class="f1aS" x="320" y="112" text-anchor="middle">AI pilot</text>
+        <text class="f1aS" x="140" y="156" text-anchor="middle">BI refresh</text>
+        <text class="f1aS" x="320" y="156" text-anchor="middle">data catalogue</text>
+        <text class="f1aS" x="140" y="200" text-anchor="middle">claims chatbot</text>
+        <text class="f1aL" x="58" y="240">No challenge named, so nothing</text>
+        <text class="f1aL" x="58" y="256">is ruled out. 35 more below.</text>
+
+        <text class="f1aH" x="478" y="72">RUMELT'S KERNEL</text>
+        <text class="f1aL" x="506" y="103">Diagnosis: what is going on here?</text>
+        <text class="f1aB" x="506" y="119">names the crux, so it can rule things out</text>
+        <text class="f1aL" x="506" y="167">Guiding policy: how we will deal with it</text>
+        <text class="f1aS" x="506" y="183">a direction, not a target</text>
+        <text class="f1aL" x="506" y="231">Coherent actions: three bets that fit</text>
+        <text class="f1aS" x="506" y="247">each one makes the others easier</text>
+
+        <text class="f1aN" x="30" y="304">Kernel from Rumelt 2011 (reported). The request pile is a familiar pattern, drawn for Keelson (constructed).</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the brass box is tonight's whole job; without it the pile on the left cannot be cut</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>The kernel, in data terms<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p><strong>Diagnosis</strong> is a judgement about the situation that simplifies it: of everything going on, this is the part that matters most, and this is why. For a data leader the trap is to diagnose the data ("our data quality is poor") instead of the business problem the data is blocking ("claims cannot be settled fast because the claim record is fixed only at the end"). The second version tells you which data to fix first; the first tells you nothing.</p>
+        <p><strong>Guiding policy</strong> is the approach that follows from the diagnosis, and it works by ruling things out. "Fix the customer and claims records before building anything that depends on them" is a policy: it says no to several of the 40 requests on Maya's desk this year. <strong>Coherent actions</strong> are the few moves that carry the policy, chosen so each one makes the next easier. Session 3 picks Keelson's first three, and the bench shows why the order matters.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Where the kernel comes from, and how sure we are<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The kernel and the hallmarks of bad strategy in Part 3 come from Rumelt's 2011 book and his McKinsey Quarterly article of the same year, "The perils of bad strategy". Neither was read in full at source for this page; the three-part kernel is stated the same way across many independent summaries, so it is reported here, not quoted. Rumelt writes about strategy in general. Applying the kernel to a data function is our move, not his, and the generic frameworks belong to the <a href="https://phoebefu6.github.io/learn-strategic-thinking-with-phoebe/">Strategic Thinking course ↗</a>.</p>
+        <p>One reason the kernel suits a new CDO: it puts a written judgement before any method. Most data-strategy templates open with a maturity assessment or a target architecture, which are methods. They are useful later, once you know which problem they are for.</p>
+      </div>
+    </details>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>The strategy that was a purchase order.</strong> A familiar pattern in any organisation: the first "data strategy" deck is a target architecture, a vendor shortlist and a migration timeline. Eighteen months later the platform is live and the business asks what changed for customers. Nothing in that deck was wrong. It answered "what will we build" before anyone had answered "what problem are we in".</p>
+    </div>
+  </section>
+
+  <section class="section" id="part-2">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · covers the 30-day listening tour</span>
+      <h2>Thirty days of listening for the crux</h2>
+      <span class="tag concept">5 min live</span>
+    </div>
+    <p class="lede">A diagnosis is built from evidence, and a new CDO's best evidence is other people's pain. The listening tour is common practice for leaders in a new role rather than a published standard; what matters is its order. Start with the people who will judge the strategy, then the people whose decisions depend on data, then the systems themselves, and only then write.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A 30-day timeline with five stops. Week 1, sponsor and executives: which decisions hurt. Week 2, business heads in claims, pricing and risk. Week 3, follow one claim through every system. Week 4, draft the diagnosis and test it with the sponsor. Day 30, highlighted in brass: a diagnosis agreed before any method is chosen.">
+        <defs>
+          <filter id="f1bSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="29" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+        </defs>
+        <style>
+          .f1bH { font: 800 12px Inter, sans-serif; fill: #161A33; }
+          .f1bL { font: 600 12px Inter, sans-serif; fill: #161A33; }
+          .f1bS { font: 400 11px Inter, sans-serif; fill: #525773; }
+          .f1bW { font: 800 11px Inter, sans-serif; fill: #FFFFFF; }
+          .f1bK { font: 800 11px Inter, sans-serif; fill: #161A33; }
+          .f1bN { font: 400 12px Inter, sans-serif; fill: #525773; }
+        </style>
+
+        <text class="f1bH" x="30" y="26">THE FIRST 30 DAYS: WHO YOU HEAR, IN WHAT ORDER</text>
+
+        <g filter="url(#f1bSk)" fill="none" stroke="#161A33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M50 120 L840 120"/>
+          <rect x="52" y="60" width="96" height="20" rx="10" fill="#0F1A6B"/>
+          <rect x="222" y="60" width="96" height="20" rx="10" fill="#0F1A6B"/>
+          <rect x="392" y="60" width="96" height="20" rx="10" fill="#0F1A6B"/>
+          <rect x="562" y="60" width="96" height="20" rx="10" fill="#0F1A6B"/>
+          <rect x="732" y="60" width="96" height="20" rx="10" fill="#C9A45C"/>
+          <circle cx="100" cy="120" r="6" fill="#FFFFFF"/>
+          <circle cx="270" cy="120" r="6" fill="#FFFFFF"/>
+          <circle cx="440" cy="120" r="6" fill="#FFFFFF"/>
+          <circle cx="610" cy="120" r="6" fill="#FFFFFF"/>
+          <circle cx="780" cy="120" r="8" fill="#C9A45C"/>
+        </g>
+
+        <text class="f1bW" x="100" y="74" text-anchor="middle">WEEK 1</text>
+        <text class="f1bW" x="270" y="74" text-anchor="middle">WEEK 2</text>
+        <text class="f1bW" x="440" y="74" text-anchor="middle">WEEK 3</text>
+        <text class="f1bW" x="610" y="74" text-anchor="middle">WEEK 4</text>
+        <text class="f1bK" x="780" y="74" text-anchor="middle">DAY 30</text>
+        <text class="f1bL" x="100" y="150" text-anchor="middle">Sponsor, execs</text>
+        <text class="f1bS" x="100" y="166" text-anchor="middle">which decisions hurt?</text>
+        <text class="f1bL" x="270" y="150" text-anchor="middle">Business heads</text>
+        <text class="f1bS" x="270" y="166" text-anchor="middle">claims, pricing, risk</text>
+        <text class="f1bL" x="440" y="150" text-anchor="middle">Follow one claim</text>
+        <text class="f1bS" x="440" y="166" text-anchor="middle">through every system</text>
+        <text class="f1bL" x="610" y="150" text-anchor="middle">Draft, then test</text>
+        <text class="f1bS" x="610" y="166" text-anchor="middle">read it to the sponsor</text>
+        <text class="f1bL" x="780" y="150" text-anchor="middle">Diagnosis agreed</text>
+        <text class="f1bS" x="780" y="166" text-anchor="middle">before any method</text>
+
+        <text class="f1bN" x="30" y="236">Common practice for a new leader, not a published standard. Keelson's tour is constructed.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the systems come in week 3, after you know which decisions they are failing</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Ask about decisions, not about data<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>"What data do you need?" gets a wish list. "Which decision did you make last month that you did not trust, and why?" gets a diagnosis. The second question also tells you who owns the decision, how often it is made, and what it costs when it goes wrong, which is exactly what session 3 needs to score a bet.</p>
+        <p>Keep the same four questions in every interview so the answers can be compared: which decision hurts, what you use today to make it, where that breaks, and what you would stop doing if it worked. Write the answers in the person's own words. Maya's notes from Keelson are in the build-along, and every one of them is a sentence about a decision, not about a table.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Follow one claim through the systems<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Week 3 is the one most new CDOs skip, because it feels like detail. Pick one ordinary claim and walk it from the first phone call to the payment, sitting next to the people who touch it. Write down every system it enters, every time someone re-keys it, and the moment each fact (the customer, the damage, the amount) becomes reliable. At Keelson the walk shows the loss amount is only trustworthy at settlement, weeks after the decisions that needed it.</p>
+        <p>The walk turns complaints into a mechanism. "Claims data is bad" becomes "the claim record is fixed late and the customer exists three times", and a mechanism is something a strategy can act on.</p>
+      </div>
+    </details>
+
+    <div class="callout tip">
+      <p><strong>Say out loud what you are doing.</strong> Tell the sponsor in week 1: "For 30 days I am listening and I will not announce projects. On day 30 you get one paragraph that says what I think is really going on, and you can tell me if I am wrong." It buys you the time, and it sets the expectation that the strategy starts from a diagnosis.</p>
+    </div>
+  </section>
+
+  <section class="section" id="part-3">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · covers how data strategies fail</span>
+      <h2>Four ways to skip the diagnosis</h2>
+      <span class="tag concept">5 min live</span>
+    </div>
+    <p class="lede">Rumelt lists hallmarks of bad strategy, among them fluff, failure to face the challenge, mistaking goals for strategy, and bad strategic objectives (reported). Each has a data version that you will hear in your first month, often from people who mean well. Recognising the sentence is the first defence.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 290" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Four columns. Technology first, sounding like we need a lakehouse, is a failure to face the challenge. Goals as strategy, sounding like become data-driven by 2028, is mistaking goals for strategy, highlighted in brass. Boil the ocean, sounding like all 40 requests in three phases, is bad strategic objectives. Slogan strategy, sounding like data is our DNA, is fluff.">
+        <defs>
+          <filter id="f1cSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="37" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <marker id="f1cAr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#161A33" stroke-width="1.6" stroke-linecap="round"/></marker>
+        </defs>
+        <style>
+          .f1cH { font: 800 12px Inter, sans-serif; fill: #161A33; }
+          .f1cL { font: 600 12px Inter, sans-serif; fill: #161A33; }
+          .f1cS { font: 400 11px Inter, sans-serif; fill: #525773; }
+          .f1cB { font: 800 11px Inter, sans-serif; fill: #4A360C; }
+          .f1cA { font: 700 11px Inter, sans-serif; fill: #0F1A6B; }
+          .f1cN { font: 400 12px Inter, sans-serif; fill: #525773; }
+        </style>
+
+        <text class="f1cH" x="30" y="26">WHAT EACH FAILURE SOUNDS LIKE, AND RUMELT'S NAME FOR IT</text>
+
+        <g filter="url(#f1cSk)" fill="none" stroke="#161A33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="40" y="50" width="190" height="40" rx="10" transform="rotate(-1 135 70)" fill="#FFFFFF"/>
+          <rect x="250" y="50" width="190" height="40" rx="10" transform="rotate(1 345 70)" fill="#C9A45C"/>
+          <rect x="460" y="50" width="190" height="40" rx="10" transform="rotate(-0.6 555 70)" fill="#FFFFFF"/>
+          <rect x="670" y="50" width="190" height="40" rx="10" transform="rotate(0.8 765 70)" fill="#FFFFFF"/>
+          <rect x="40" y="108" width="190" height="62" rx="10" transform="rotate(0.5 135 139)" fill="#EEF0FA"/>
+          <rect x="250" y="108" width="190" height="62" rx="10" transform="rotate(-0.5 345 139)" fill="#F8F1E2"/>
+          <rect x="460" y="108" width="190" height="62" rx="10" transform="rotate(0.4 555 139)" fill="#EEF0FA"/>
+          <rect x="670" y="108" width="190" height="62" rx="10" transform="rotate(-0.4 765 139)" fill="#EEF0FA"/>
+          <path d="M135 176 L135 206" marker-end="url(#f1cAr)"/>
+          <path d="M345 176 L345 206" marker-end="url(#f1cAr)"/>
+          <path d="M555 176 L555 206" marker-end="url(#f1cAr)"/>
+          <path d="M765 176 L765 206" marker-end="url(#f1cAr)"/>
+        </g>
+
+        <text class="f1cL" x="135" y="75" text-anchor="middle">Technology first</text>
+        <text class="f1cL" x="345" y="75" text-anchor="middle">Goals as strategy</text>
+        <text class="f1cL" x="555" y="75" text-anchor="middle">Boil the ocean</text>
+        <text class="f1cL" x="765" y="75" text-anchor="middle">Slogan strategy</text>
+        <text class="f1cA" x="135" y="128" text-anchor="middle">SOUNDS LIKE</text>
+        <text class="f1cS" x="135" y="146" text-anchor="middle">"we need a lakehouse</text>
+        <text class="f1cS" x="135" y="161" text-anchor="middle">before anything else"</text>
+        <text class="f1cA" x="345" y="128" text-anchor="middle">SOUNDS LIKE</text>
+        <text class="f1cB" x="345" y="146" text-anchor="middle">"become data-driven</text>
+        <text class="f1cB" x="345" y="161" text-anchor="middle">by 2028"</text>
+        <text class="f1cA" x="555" y="128" text-anchor="middle">SOUNDS LIKE</text>
+        <text class="f1cS" x="555" y="146" text-anchor="middle">"all 40 requests,</text>
+        <text class="f1cS" x="555" y="161" text-anchor="middle">in three phases"</text>
+        <text class="f1cA" x="765" y="128" text-anchor="middle">SOUNDS LIKE</text>
+        <text class="f1cS" x="765" y="146" text-anchor="middle">"data is our DNA"</text>
+        <text class="f1cL" x="135" y="228" text-anchor="middle">failure to face</text>
+        <text class="f1cL" x="135" y="244" text-anchor="middle">the challenge</text>
+        <text class="f1cL" x="345" y="228" text-anchor="middle">mistaking goals</text>
+        <text class="f1cL" x="345" y="244" text-anchor="middle">for strategy</text>
+        <text class="f1cL" x="555" y="228" text-anchor="middle">bad strategic</text>
+        <text class="f1cL" x="555" y="244" text-anchor="middle">objectives</text>
+        <text class="f1cL" x="765" y="228" text-anchor="middle">fluff</text>
+
+        <text class="f1cN" x="30" y="274">Hallmark names from Rumelt 2011 (reported). The quoted sentences are constructed examples.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the brass column is the one a board most often applauds, because a target feels like a decision</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Why "become data-driven" is not a strategy<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>A goal says where you want to be. It does not say what is in the way, so it cannot tell anyone what to stop doing. "Become data-driven by 2028" is compatible with every one of the 40 requests on Maya's desk, which is exactly the problem: it rules nothing out. The test is simple. Read the statement and ask which request it would reject. If the answer is none, it is an aspiration, and the strategy has not started.</p>
+        <p>The same test catches technology-first plans from the other side. "Build a lakehouse" rejects plenty, but for a reason nobody stated. Ask "what is going on that makes this the answer?" If the reply is about the platform rather than a business decision, the diagnosis is missing.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>"80 percent of data projects fail", traced<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Nearly every data-strategy pitch opens with a failure rate. The usual source given is Gartner. The trail, as reported in trade coverage: Gartner estimated in 2016 that 60 percent of big data projects failed, and in 2017 Gartner analyst Nick Heudecker remarked, in what was reported as a tweet, that the estimate was "too conservative" and the figure was closer to 85 percent. That is an analyst's informal remark about "big data projects", not a published study of data strategies, and it has been quoted since as 80, 85 and 87 percent for everything from AI to dashboards.</p>
+        <p>"Data is the new oil" has a similar life: commonly credited to Clive Humby in 2006 (reported), repeated as if it were a finding. The useful half of the metaphor is the part usually dropped, that crude oil is worth little until it is refined, which is a cost. Use neither as evidence in a board paper. If you want a number about failure, use one from your own organisation's last three data initiatives, which the listening tour will give you.</p>
+      </div>
+    </details>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>What the role is expected to produce.</strong> Gartner's 2025 survey of chief data and analytics officers (504 respondents, reported) found 91 percent named creating an actionable data and analytics strategy as a primary responsibility, and 30 percent named the inability to measure the impact of data, analytics and AI as their top challenge. Read together, the two numbers describe the gap a new CDO walks into: the strategy is expected, and the link from strategy to measured value is where it is hardest. Session 5 returns to the second number.</p>
+    </div>
+  </section>
+
+  <section class="section" id="demo-1">
+    <div class="section-kicker">
+      <span class="klabel">Build-along</span>
+      <h2>Keelson's diagnosis, in one paragraph</h2>
+      <span class="tag demo">★ 22 min · everyone builds</span>
+    </div>
+    <p class="lede">Maya has finished her 30 days. Below are five lines from her notes, each in the speaker's own words (all constructed). Work from notes to themes to one paragraph, as she does. If you have your own organisation in mind, run the same steps on your own notes as you go; your paragraph will differ, and it should.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 290" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Five interview notes on the left (Priya and Pricing feed the first theme, Ben and Elena the second, Tom the third) feed three themes in the middle: cannot join customers, claims data fixed late, and wins stay one-offs. The three themes feed one diagnosis box on the right, highlighted in brass, reading: Keelson cannot trust or join its customer and claims data, so every win stays a one-off.">
+        <defs>
+          <filter id="f1dSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="41" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <marker id="f1dAr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#161A33" stroke-width="1.6" stroke-linecap="round"/></marker>
+        </defs>
+        <style>
+          .f1dH { font: 800 12px Inter, sans-serif; fill: #161A33; }
+          .f1dL { font: 600 12px Inter, sans-serif; fill: #161A33; }
+          .f1dS { font: 400 11px Inter, sans-serif; fill: #525773; }
+          .f1dB { font: 800 12px Inter, sans-serif; fill: #4A360C; }
+          .f1dA { font: 700 11px Inter, sans-serif; fill: #0F1A6B; }
+          .f1dN { font: 400 12px Inter, sans-serif; fill: #525773; }
+        </style>
+
+        <text class="f1dH" x="30" y="26">FROM NOTES TO THEMES TO ONE PARAGRAPH</text>
+
+        <g filter="url(#f1dSk)" fill="none" stroke="#161A33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="30" y="56" width="196" height="30" rx="4" transform="rotate(-1.5 128 71)" fill="#FFFFFF"/>
+          <rect x="30" y="100" width="196" height="30" rx="4" transform="rotate(1.2 128 115)" fill="#FFFFFF"/>
+          <rect x="30" y="144" width="196" height="30" rx="4" transform="rotate(-1 128 159)" fill="#FFFFFF"/>
+          <rect x="30" y="188" width="196" height="30" rx="4" transform="rotate(1.5 128 203)" fill="#FFFFFF"/>
+          <rect x="30" y="232" width="196" height="30" rx="4" transform="rotate(-1.2 128 247)" fill="#FFFFFF"/>
+          <rect x="300" y="78" width="200" height="40" rx="10" transform="rotate(0.6 400 98)" fill="#EEF0FA"/>
+          <rect x="300" y="142" width="200" height="40" rx="10" transform="rotate(-0.6 400 162)" fill="#EEF0FA"/>
+          <rect x="300" y="206" width="200" height="40" rx="10" transform="rotate(0.5 400 226)" fill="#EEF0FA"/>
+          <rect x="580" y="104" width="270" height="116" rx="12" transform="rotate(-0.5 715 162)" fill="#C9A45C"/>
+          <path d="M230 71 C260 76 276 86 296 92" marker-end="url(#f1dAr)"/>
+          <path d="M230 115 C260 112 276 106 296 104" marker-end="url(#f1dAr)"/>
+          <path d="M230 159 C260 158 276 156 296 156" marker-end="url(#f1dAr)"/>
+          <path d="M230 203 C260 196 276 176 296 168" marker-end="url(#f1dAr)"/>
+          <path d="M230 247 C260 242 276 232 296 228" marker-end="url(#f1dAr)"/>
+          <path d="M504 98 C534 108 554 122 576 130" marker-end="url(#f1dAr)"/>
+          <path d="M504 162 L576 162" marker-end="url(#f1dAr)"/>
+          <path d="M504 226 C534 216 554 204 576 196" marker-end="url(#f1dAr)"/>
+        </g>
+
+        <text class="f1dA" x="30" y="48">NOTES</text>
+        <text class="f1dS" x="42" y="75">Priya: one customer, 3 IDs</text>
+        <text class="f1dS" x="42" y="119">Pricing: no declined quotes</text>
+        <text class="f1dS" x="42" y="163">Ben: reserves rebuilt by hand</text>
+        <text class="f1dS" x="42" y="207">Elena: audit found 2 sources</text>
+        <text class="f1dS" x="42" y="251">Tom: pilots never scale</text>
+        <text class="f1dA" x="300" y="70">THEMES</text>
+        <text class="f1dL" x="400" y="102" text-anchor="middle">Cannot join customers</text>
+        <text class="f1dL" x="400" y="166" text-anchor="middle">Claims data fixed late</text>
+        <text class="f1dL" x="400" y="230" text-anchor="middle">Wins stay one-offs</text>
+        <text class="f1dH" x="598" y="130">DIAGNOSIS</text>
+        <text class="f1dB" x="598" y="154">Keelson cannot trust or join</text>
+        <text class="f1dB" x="598" y="172">its customer and claims data,</text>
+        <text class="f1dB" x="598" y="190">so every win stays a one-off.</text>
+
+        <text class="f1dN" x="30" y="282">Notes, names and the paragraph are constructed. Two notes feed one theme where the cause is the same.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - five complaints, one mechanism: the diagnosis names the cause they share, not each symptom</figcaption>
+    </figure>
+
+    <div class="steps">
+      <div class="step">
+        <p><strong>Read the notes as decisions that hurt.</strong> For each line, write the decision underneath and who owns it. A note you cannot turn into a decision is a preference, and it stays in the appendix.</p>
+        <div class="prompt-box good"><span class="label">★ Step 1 · the notes (constructed)</span>Priya Natarajan, head of claims:
+  "A customer calls about a claim and we find them under 3 IDs."
+  decision: who to fast-track, and whether a claim looks odd
+Ben Hale, chief actuary:
+  "Every quarter we rebuild reserves by hand from claims extracts."
+  decision: how much to hold for claims not yet settled
+Elena Ruiz, chief risk officer:
+  "The last audit found two sources for the same claims total."
+  decision: what to report to the regulator, and sign
+Tom Reyes, COO and sponsor:
+  "We have run five analytics pilots. None of them scaled."
+  decision: which work to fund next year
+Pricing team:
+  "We never stored the quotes customers turned down."
+  decision: renewal price, by customer</div>
+      </div>
+      <div class="step">
+        <p><strong>Cluster into themes by cause, not by department.</strong> Two notes belong together when the same fix would help both. Priya's three IDs and Tom's pilots that never scaled share a cause: each pilot rebuilt its own customer list.</p>
+        <div class="prompt-box good"><span class="label">★ Step 2 · three themes</span>A  Cannot join customers      Priya, Tom (each pilot rebuilt
+                                the customer list), Pricing
+B  Claims data fixed late      Ben, Elena, Priya (the amount
+                                is reliable only at settlement)
+C  Wins stay one-offs          Tom: a pilot proves value, then
+                                has nothing shared to stand on</div>
+      </div>
+      <div class="step">
+        <p><strong>Find the crux.</strong> Rumelt's word for the part of the problem that, once addressed, makes the rest easier. Ask of each theme: if this were fixed, how many of the others would get easier? At Keelson, A and B make C happen; C is the symptom.</p>
+        <div class="prompt-box good"><span class="label">★ Step 3 · the crux test</span>Fix A (one customer)       helps B? partly   helps C? yes
+Fix B (claims fixed early)  helps A? no       helps C? yes
+Fix C (scale one pilot)     helps A? no       helps B? no
+
+Crux: A and B together. C is what they cause.</div>
+      </div>
+      <div class="step">
+        <p><strong>Write the paragraph.</strong> Three sentences: what is going on, why it matters to a decision the board cares about, and what it explains. No method, no technology, no target.</p>
+        <div class="prompt-box good"><span class="label">★ Step 4 · Keelson's diagnosis (draft)</span>Keelson cannot trust or join its customer and claims data:
+one customer can hold several IDs, and a claim's amount
+becomes reliable only at settlement. Every decision that
+needs either one early (fast-tracking a claim, spotting
+fraud, holding reserves, pricing a renewal) is made on a
+rebuilt extract. That is why five pilots each proved value
+and none scaled: each one rebuilt the same foundations.</div>
+      </div>
+      <div class="step">
+        <p><strong>Test it before you show it.</strong> Three questions. If any answer is no, rewrite.</p>
+        <div class="prompt-box good"><span class="label">★ Step 5 · the three tests</span>1. Does it name a challenge, not a goal?
+   yes: "cannot trust or join", not "become data-driven"
+2. Would Priya, Ben, Elena and Tom each recognise their
+   own note in it?                         check with each
+3. Does it rule something out?
+   yes: anything that needs a clean customer or an early
+   claim amount waits until those exist</div>
+      </div>
+      <div class="step">
+        <p><strong>Sketch the guiding policy in one line, and stop.</strong> Session 2 turns it into an ambition statement once Keelson is placed between offense and defense. For now, one sentence that follows from the diagnosis.</p>
+        <div class="prompt-box good"><span class="label">★ Step 6 · first line of the policy</span>Build the shared customer and early claim record first,
+and fund only the bets that use them.</div>
+      </div>
+    </div>
+
+    <div class="callout tip">
+      <p><strong>Read it to the sponsor before anyone else.</strong> Maya reads the paragraph to Tom and asks one question: "Is this what is going on?" If Tom disagrees, the disagreement is the most valuable thing the 30 days produced, because the strategy would otherwise have been built on two different diagnoses.</p>
+    </div>
+  </section>
+
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Before session 2</h2>
+      <span class="tag exercise">30 min</span>
+    </div>
+    <ol>
+      <li><strong>Write your four interview questions.</strong> Which decision hurts, what you use today, where it breaks, what you would stop doing if it worked. Book the first three conversations.</li>
+      <li><strong>Pick the one process you will walk.</strong> The equivalent of Keelson's claim: one ordinary transaction that crosses the systems that matter most.</li>
+      <li><strong>Find your organisation's version of a failure sentence.</strong> Which of the four in Part 3 have you heard this year, and who said it?</li>
+      <li><strong>Draft your diagnosis paragraph,</strong> even if it is a guess. Bring it to session 2, where it decides where you sit between offense and defense.</li>
+    </ol>
+  </section>
+
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions</h2>
+    </div>
+    <p>Clear all three and session 1 gets stamped in your passport.</p>
+
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">1 · Which of these is a diagnosis in Rumelt's sense?</p>
+      <button class="qopt" type="button">A · "Keelson will be a data-driven insurer by 2028"</button>
+      <button class="qopt" type="button">B · "Claim amounts become reliable only at settlement, so every early decision runs on a rebuilt extract"</button>
+      <button class="qopt" type="button">C · "Keelson needs a modern cloud data platform"</button>
+      <button class="qopt" type="button">D · "Data is Keelson's most valuable asset"</button>
+      <p class="qwhy">A diagnosis says what is going on and why it matters, which lets it rule things out. A is a goal, C is a method with no stated problem, and D is a slogan; none of them would reject a single request on Maya's desk.</p>
+    </div>
+
+    <div class="quiz-q" data-answer="3">
+      <p class="qtext">2 · A vendor's slide says "Gartner: 85% of data projects fail". What is the honest reading?</p>
+      <button class="qopt" type="button">A · It is a published Gartner study of data strategies</button>
+      <button class="qopt" type="button">B · It proves most data strategies should not be attempted</button>
+      <button class="qopt" type="button">C · It applies to AI projects, which is where Gartner measured it</button>
+      <button class="qopt" type="button">D · It traces to a 2017 analyst remark, reported as a tweet, about big data projects, updating an earlier 60 percent estimate; it is not a study</button>
+      <p class="qwhy">The figure is reported as Nick Heudecker's informal remark that Gartner's earlier estimate was "too conservative". It may point at something real, but it is not evidence about your strategy; your own last three initiatives are better evidence.</p>
+    </div>
+
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">3 · How do you know a guiding policy is doing its job?</p>
+      <button class="qopt" type="button">A · It rules out some of the requests on the table, for a reason that follows from the diagnosis</button>
+      <button class="qopt" type="button">B · It includes every department's top request</button>
+      <button class="qopt" type="button">C · It names a target date and a percentage</button>
+      <button class="qopt" type="button">D · It lists the platform the company will buy</button>
+      <p class="qwhy">A policy works by saying no. Keelson's "shared customer and early claim record first" puts anything that needs those foundations behind them. B is a list, C is a goal, and D is an action with no policy above it.</p>
+    </div>
+
+    <p class="quiz-score"></p>
+  </section>
+
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Sources covered</span>
+      <h2>What this session teaches, and where it came from</h2>
+    </div>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Rumelt (2011), Good Strategy / Bad Strategy</span><span class="note">The kernel (diagnosis, guiding policy, coherent actions) and the hallmarks of bad strategy, reported: consistent across summaries, the book and the McKinsey Quarterly article were not read in full at source</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Gartner (2025), CDAO Agenda Survey press releases</span><span class="note">91 percent name an actionable strategy as a primary responsibility; 30 percent name measuring impact as the top challenge. Reported: the press release pages could not be opened</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">"85 percent of big data projects fail"</span><span class="note">Traced as reported to a 2017 remark by a Gartner analyst updating a 2016 estimate of 60 percent; not a published study</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">"Data is the new oil"</span><span class="note">Commonly credited to Clive Humby, 2006, reported; taught as a slogan, never as evidence</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">The 30-day listening tour</span><span class="note">Common practice for a leader in a new role, assembled here as four weeks; no single source prescribes this order</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Keelson Mutual, Maya, Tom, Priya, Ben and Elena</span><span class="note">Constructed for teaching; no number about them is a measurement</span></div>
+    </div>
+    <p class="mono" style="margin-top:14px">Every fact on this page, and its verification tier, is recorded in the course's source map.</p>
+  </section>
+
+  <section class="cheat" id="cheatsheet">
+    <h3>Session 1 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>The kernel</b><span>Diagnosis, guiding policy, coherent actions. A list of projects has none of the three.</span></div>
+      <div class="cheat-item"><b>The goal test</b><span>Which request would this statement reject? None means it is a goal, not a strategy.</span></div>
+      <div class="cheat-item"><b>Four interview questions</b><span>Which decision hurts, what you use today, where it breaks, what you would stop doing.</span></div>
+      <div class="cheat-item"><b>Walk one transaction</b><span>Note every system, every re-key, and when each fact becomes reliable.</span></div>
+      <div class="cheat-item"><b>The crux</b><span>The theme that, fixed, makes the others easier. Symptoms come last.</span></div>
+      <div class="cheat-item"><b>Folklore stays out</b><span>No "80 percent fail", no "new oil" in a board paper. Use your own track record.</span></div>
+    </div>
+  </section>
+
+  <div class="callout next">
+    <span class="nx-pill">Next session</span>
+    <p>Maya has a diagnosis. Session 2 asks what Keelson's data is for: defense, offense, or which balance of the two, using DalleMule and Davenport's dial, and turns the policy line into an ambition statement the board can test.</p>
+  </div>
+
+  <footer class="pagefoot">
+    <span>Session 1 of 6 · learn-data-strategy-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="../index.html">← Course home</a> &nbsp;·&nbsp; <a href="02-what-the-data-is-for.html">Next: What the data is for →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>

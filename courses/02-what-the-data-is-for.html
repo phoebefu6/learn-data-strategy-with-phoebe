@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- social:start -->
+<meta name="description" content="Session 2 of 6. Before choosing projects, decide what the data is for. DalleMule and Davenport's offense and defense, one governed source with several fit-for-purpose versions, why an insurer's balance moves over time, and Keelson Mutual's place on the dial with a two-sentence ambition statement.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Learn with Phoebe">
+<meta property="og:title" content="What the data is for - learn data strategy with phoebe">
+<meta property="og:description" content="Session 2 of 6. Offense, defense and the balance between them; one source of truth and several fit-for-purpose versions; an ambition statement that rules something out.">
+<meta property="og:url" content="https://phoebefu6.github.io/learn-data-strategy-with-phoebe/courses/02-what-the-data-is-for.html">
+<meta property="og:image" content="https://phoebefu6.github.io/learn-data-strategy-with-phoebe/assets/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="What the data is for - learn data strategy with phoebe">
+<meta name="twitter:description" content="Session 2 of 6. Offense and defense, SSOT and MVOTs, and Keelson's place on the dial.">
+<meta name="twitter:image" content="https://phoebefu6.github.io/learn-data-strategy-with-phoebe/assets/og-cover.png">
+<!-- social:end -->
+<title>Session 2 · What the data is for - learn data strategy with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-data-strategy-with-phoebe</a> / Session 2 of 6</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn Data Strategy with Phoebe · Session 2 of 6</div>
+    <h1>What the <span class="accent">data</span> is for</h1>
+    <p class="sub">A diagnosis says what is going on. The next question sounds simple and is argued about in every executive team: what is the data for? Protecting the company, or growing it? Tonight we read DalleMule and Davenport's answer, offense and defense held in balance, look at the mechanism underneath it, one governed source feeding several fit-for-purpose versions, and place an insurer on the dial. Then Keelson gets a position and an ambition statement that can say no.</p>
+    <div class="chip-row">
+      <span class="chip level">🟡 Core</span>
+      <span class="chip audience">New and aspiring CDOs, CDAOs, Heads of Data</span>
+      <span class="chip audience">Bring your session 1 diagnosis</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:4">3-18 · Offense, SSOT, the dial</span>
+      <span class="a3" style="flex:5">18-40 · Build-along: Keelson on the dial</span>
+      <span class="a4" style="flex:1">40-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Where Maya stands now</h2>
+    </div>
+    <p class="lede">The running case is constructed. Maya Okafor, Keelson Mutual's new chief data officer, ended session 1 with a one-paragraph diagnosis: Keelson cannot trust or join its customer and claims data, so every win stays a one-off. Tom Reyes, her sponsor, agreed with it. Now he asks the question every board asks next: "So is this a compliance clean-up or a growth plan?" Tonight Maya answers it with a position, not a slogan, and adds the second page to Keelson's strategy. Keelson, its people and its numbers are invented for teaching.</p>
+
+    <div class="legend">
+      <span class="pill">🎫 Clear all three quiz questions to stamp your passport</span>
+      <span class="pill">Live = presented in the 45 minutes</span>
+      <span class="pill">Self-study = the full depth, after class</span>
+      <span class="pill">★ Build-along = write it yourself</span>
+    </div>
+
+    <div class="callout win">
+      <p><strong>★ What you walk out with tonight.</strong> The offense and defense distinction and what each one is tied to, a drawing of one governed source feeding several fit-for-purpose versions that you can redraw for your own data, the two forces that move an insurer's balance and why it moves over time, and a two-sentence ambition statement for Keelson that passes the "goals are not strategy" test.</p>
+    </div>
+  </section>
+
+  <section class="section" id="part-1">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers DalleMule and Davenport's offense and defense</span>
+      <h2>Offense, defense, and the balance between</h2>
+      <span class="tag concept">5 min live</span>
+    </div>
+    <p class="lede">In "What's Your Data Strategy?" (<em>Harvard Business Review</em>, May-June 2017), Leandro DalleMule, then chief data officer at the insurer AIG, and Thomas H. Davenport of Babson College put the argument in their subtitle: the key is to balance offense and defense. As the article is consistently summarised (its body was not read at source, so this is reported), defense means minimising downside risk and offense means supporting business objectives. Neither is the right answer on its own; the strategy is the balance, and the balance is a choice.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two panels on a seesaw. Defense, on the left: minimise downside risk across compliance, security, privacy and integrity, tied to a single source of truth. Offense, on the right: support business objectives such as revenue, profitability and customer satisfaction, tied to multiple versions of the truth built from it. The brass fulcrum is the balance, which shifts with industry, regulation and competition. Below, the article's four printed figures: under half of structured data used in decisions, under 1 percent of unstructured data analysed, over 70 percent of employees can see data they should not, 80 percent of analyst time spent finding and preparing data.">
+        <defs>
+          <filter id="f2aSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="17" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <pattern id="f2aHc" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(-38)"><line x1="0" y1="0" x2="0" y2="7" stroke="#0F1A6B" stroke-width="1" opacity=".5"/></pattern>
+          <marker id="f2aAr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#161A33" stroke-width="1.6" stroke-linecap="round"/></marker>
+        </defs>
+        <style>
+          .f2aH { font: 800 12px Inter, sans-serif; fill: #161A33; }
+          .f2aL { font: 600 12px Inter, sans-serif; fill: #161A33; }
+          .f2aS { font: 400 11px Inter, sans-serif; fill: #525773; }
+          .f2aB { font: 800 11px Inter, sans-serif; fill: #4A360C; }
+          .f2aV { font: 800 18px Inter, sans-serif; fill: #0A1150; }
+          .f2aA { font: 700 11px Inter, sans-serif; fill: #0F1A6B; }
+          .f2aN { font: 400 12px Inter, sans-serif; fill: #525773; }
+        </style>
+
+        <text class="f2aH" x="30" y="26">TWO JOBS FOR THE SAME DATA, AND THE CHOICE BETWEEN THEM</text>
+
+        <g filter="url(#f2aSk)" fill="none" stroke="#161A33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="40" y="46" width="370" height="150" rx="12" transform="rotate(-0.5 225 121)" fill="#EEF0FA"/>
+          <rect x="470" y="46" width="370" height="150" rx="12" transform="rotate(0.5 655 121)" fill="#FFFFFF"/>
+          <path d="M100 240 L780 222"/>
+          <path d="M440 232 L410 276 L470 276 Z" fill="#C9A45C"/>
+        </g>
+
+        <text class="f2aH" x="60" y="72">DEFENSE</text>
+        <text class="f2aL" x="60" y="96">Minimise downside risk</text>
+        <text class="f2aS" x="60" y="114">compliance, security, privacy, integrity</text>
+        <text class="f2aL" x="60" y="142">Tied to: a single source of truth</text>
+        <text class="f2aS" x="60" y="160">one governed version of each key record</text>
+        <text class="f2aS" x="60" y="178">typical work: controls, lineage, quality</text>
+
+        <text class="f2aH" x="490" y="72">OFFENSE</text>
+        <text class="f2aL" x="490" y="96">Support business objectives</text>
+        <text class="f2aS" x="490" y="114">revenue, profitability, customer satisfaction</text>
+        <text class="f2aL" x="490" y="142">Tied to: multiple versions of the truth</text>
+        <text class="f2aS" x="490" y="160">fit-for-purpose views built from the SSOT</text>
+        <text class="f2aS" x="490" y="178">typical work: analytics, models, pricing</text>
+
+        <text class="f2aA" x="60" y="268">PULL TOWARD CONTROL</text>
+        <text class="f2aA" x="820" y="252" text-anchor="end">PULL TOWARD GROWTH</text>
+        <text class="f2aB" x="440" y="298" text-anchor="middle">the balance shifts with industry, regulation and competition</text>
+
+        <text class="f2aA" x="40" y="314">WHAT THE ARTICLE REPORTS, ACROSS INDUSTRIES (AS PRINTED)</text>
+        <text class="f2aV" x="40" y="350">under half</text>
+        <text class="f2aS" x="40" y="368">of structured data is</text>
+        <text class="f2aS" x="40" y="382">used in decisions</text>
+        <text class="f2aV" x="250" y="350">under 1%</text>
+        <text class="f2aS" x="250" y="368">of unstructured data is</text>
+        <text class="f2aS" x="250" y="382">analysed or used at all</text>
+        <text class="f2aV" x="460" y="350">over 70%</text>
+        <text class="f2aS" x="460" y="368">of employees can see</text>
+        <text class="f2aS" x="460" y="382">data they should not</text>
+        <text class="f2aV" x="670" y="350">80%</text>
+        <text class="f2aS" x="670" y="368">of analyst time goes on</text>
+        <text class="f2aS" x="670" y="382">finding and preparing data</text>
+
+        <text class="f2aN" x="30" y="408">Figures as printed in DalleMule and Davenport, HBR 2017 (sources not named there); definitions reported.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the brass fulcrum is the strategy: not which side is right, but where you put the weight this year</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>Two jobs, two kinds of truth<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p><strong>Defense</strong> is the work that keeps the company out of trouble: meeting regulation, keeping data secure and private, making sure a number means the same thing every time it is reported. Its natural product is a <strong>single source of truth</strong> (SSOT), one governed version of each key record, such as the customer or the claim, that everyone agrees to start from.</p>
+        <p><strong>Offense</strong> is the work that helps the company win: pricing better, keeping customers, settling claims faster, finding fraud. Its natural product is <strong>multiple versions of the truth</strong> (MVOTs): views shaped for one purpose, built from the SSOT. The two are not rivals. Offense without defense builds fast on records nobody trusts; defense without offense builds a clean warehouse nobody uses. The summaries agree that the authors' point is the balance, and that the right balance differs by company.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>What the article says at source, and what is reported<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Read at source on the article page: the title, the two authors and their roles at the time, the subtitle about balancing offense and defense, and four cross-industry figures in its opening. The article reports that less than half of an organisation's structured data is actively used in making decisions, less than 1 percent of its unstructured data is analysed or used at all, more than 70 percent of employees have access to data they should not, and 80 percent of analysts' time is spent discovering and preparing data. The studies behind those figures are not named on the readable page, so quote them as "the article reports", never as a measured fact about your organisation.</p>
+        <p>The body of the article sits behind a paywall. The definitions above, the link from defense to SSOT and from offense to MVOTs, and the idea that the balance shifts with industry, regulation and competition are consistent across independent summaries, so they are reported here rather than quoted. If your board paper leans on the framework, buy or borrow the article and read the body before you cite a detail.</p>
+      </div>
+    </details>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>Four numbers, one on each side.</strong> Read the article's four printed figures as a pair of pairs. "Over 70 percent of employees can see data they should not" is a defense failure: access was never governed. "Under half of structured data is used in decisions" and "80 percent of analyst time goes on finding and preparing data" are offense failures that start in defense: people cannot use what they cannot find or trust. That is the article's argument in miniature, and it is the shape of Keelson's diagnosis too.</p>
+    </div>
+  </section>
+
+  <section class="section" id="part-2">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · covers SSOT and MVOTs as a mechanism</span>
+      <h2>One source, several truths</h2>
+      <span class="tag concept">5 min live</span>
+    </div>
+    <p class="lede">"Multiple versions of the truth" sounds like the problem a data leader is hired to end. It is not, as long as every version is built from the same governed source and can be traced back to it. The claims team, the pricing team and finance need different shapes of the same customer, and forcing one shape on all three is how shadow spreadsheets begin. The rule is: versions may differ on purpose, never by accident.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Four source systems on the left, policy, claims, contact centre and broker feeds, flow into one single customer view in the middle, highlighted in brass: one ID per customer, matched, owned, audited, changed only by rule. The single customer view feeds three fit-for-purpose views on the right: a claims view grouped by household with open claims, a pricing view with declined quotes, and a finance view of the policy holder as booked by accounting period.">
+        <defs>
+          <filter id="f2bSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="23" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <pattern id="f2bHc" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(-38)"><line x1="0" y1="0" x2="0" y2="7" stroke="#0F1A6B" stroke-width="1" opacity=".5"/></pattern>
+          <marker id="f2bAr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#161A33" stroke-width="1.6" stroke-linecap="round"/></marker>
+        </defs>
+        <style>
+          .f2bH { font: 800 12px Inter, sans-serif; fill: #161A33; }
+          .f2bL { font: 600 12px Inter, sans-serif; fill: #161A33; }
+          .f2bS { font: 400 11px Inter, sans-serif; fill: #525773; }
+          .f2bB { font: 800 11px Inter, sans-serif; fill: #4A360C; }
+          .f2bA { font: 700 11px Inter, sans-serif; fill: #0F1A6B; }
+          .f2bN { font: 400 12px Inter, sans-serif; fill: #525773; }
+        </style>
+
+        <text class="f2bH" x="30" y="26">ONE GOVERNED SOURCE, SEVERAL FIT-FOR-PURPOSE VERSIONS</text>
+
+        <g filter="url(#f2bSk)" fill="none" stroke="#161A33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="30" y="70" width="170" height="34" rx="6" transform="rotate(-1.5 115 87)" fill="#FFFFFF"/>
+          <rect x="30" y="124" width="170" height="34" rx="6" transform="rotate(1.2 115 141)" fill="#FFFFFF"/>
+          <rect x="30" y="178" width="170" height="34" rx="6" transform="rotate(-1 115 195)" fill="#FFFFFF"/>
+          <rect x="30" y="232" width="170" height="34" rx="6" transform="rotate(1.5 115 249)" fill="#FFFFFF"/>
+          <rect x="300" y="110" width="220" height="110" rx="12" transform="rotate(-0.5 410 165)" fill="#C9A45C"/>
+          <rect x="610" y="66" width="240" height="50" rx="10" transform="rotate(0.6 730 91)" fill="#EEF0FA"/>
+          <rect x="610" y="140" width="240" height="50" rx="10" transform="rotate(-0.6 730 165)" fill="#EEF0FA"/>
+          <rect x="610" y="214" width="240" height="50" rx="10" transform="rotate(0.5 730 239)" fill="#EEF0FA"/>
+          <path d="M206 87 C240 92 266 120 294 134" marker-end="url(#f2bAr)"/>
+          <path d="M206 141 C240 144 266 150 294 154" marker-end="url(#f2bAr)"/>
+          <path d="M206 195 C240 192 266 182 294 176" marker-end="url(#f2bAr)"/>
+          <path d="M206 249 C240 244 266 214 294 200" marker-end="url(#f2bAr)"/>
+          <path d="M526 140 C560 128 580 104 604 94" marker-end="url(#f2bAr)"/>
+          <path d="M526 165 L604 165" marker-end="url(#f2bAr)"/>
+          <path d="M526 190 C560 202 580 228 604 236" marker-end="url(#f2bAr)"/>
+        </g>
+
+        <text class="f2bA" x="30" y="58">SOURCE SYSTEMS</text>
+        <text class="f2bL" x="115" y="91" text-anchor="middle">Policy system</text>
+        <text class="f2bL" x="115" y="145" text-anchor="middle">Claims system</text>
+        <text class="f2bL" x="115" y="199" text-anchor="middle">Contact centre</text>
+        <text class="f2bL" x="115" y="253" text-anchor="middle">Broker feeds</text>
+
+        <text class="f2bA" x="300" y="100">THE SSOT (DEFENSE)</text>
+        <text class="f2bH" x="320" y="140">Single customer view</text>
+        <text class="f2bB" x="320" y="162">one ID per customer</text>
+        <text class="f2bB" x="320" y="180">matched, owned, audited</text>
+        <text class="f2bB" x="320" y="198">changed only by rule</text>
+
+        <text class="f2bA" x="610" y="56">MVOTS (OFFENSE)</text>
+        <text class="f2bL" x="626" y="88">Claims view</text>
+        <text class="f2bS" x="626" y="106">household grouped, open claims</text>
+        <text class="f2bL" x="626" y="162">Pricing view</text>
+        <text class="f2bS" x="626" y="180">customer plus declined quotes</text>
+        <text class="f2bL" x="626" y="236">Finance view</text>
+        <text class="f2bS" x="626" y="254">as booked, by accounting period</text>
+
+        <text class="f2bN" x="30" y="296">Each view may differ from the others on purpose; none may differ from the SSOT by accident.</text>
+        <text class="f2bN" x="30" y="316">Mechanism after DalleMule and Davenport 2017 (reported). Keelson's systems are constructed.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the brass record is defense work; every arrow out of it is offense that can now be trusted</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Why three teams need three versions<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Take one Keelson customer, a small-business owner with a van policy, a home policy and an open claim. The claims team wants her grouped with her household, because two claims from one address in a month is a fraud signal. Pricing wants her with every quote she turned down, because that is what tells them where the price was wrong. Finance wants her as booked, period by period, because that is what the regulator and the auditors check. All three are correct, and all three are different.</p>
+        <p>What makes them safe is the arrow back. If each view starts from the same customer ID and the rules that shape it are written down, a difference between two reports can be explained in one sentence. If each view started from its own extract, the difference becomes a meeting, and at Keelson that meeting happened when the audit found two sources for the same claims total.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>How to tell a governed version from a shadow copy<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Three questions separate an MVOT from a spreadsheet that happens to agree today. Does it start from the SSOT's key, or from a private extract? Are the rules that reshape it written down where someone else can read them? Does it have a named owner who answers when it disagrees with another view? Three yeses make it a version; any no makes it a copy that will drift.</p>
+        <p>The governance machinery that makes the SSOT real (ownership, quality rules, stewardship) is taught in depth in the <a href="https://phoebefu6.github.io/learn-data-governance-with-phoebe/">Data Governance course ↗</a>, and building one view as a product with users and a roadmap belongs to the <a href="https://phoebefu6.github.io/learn-data-product-with-phoebe/">Data Product course ↗</a>. The strategy question is narrower: which records must become an SSOT first, because the most valuable views depend on them. Session 4 returns to the minimum governance needed for that.</p>
+      </div>
+    </details>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>Three revenue numbers at one board meeting.</strong> A familiar pattern in any organisation: sales, finance and the analytics team each bring a revenue figure, all three are defensible, and the first twenty minutes go on reconciling them. The usual fix, declaring one of them "the truth" and banning the others, fails within a quarter because the other two existed for a reason. The fix that lasts is upstream: one governed order record, three written definitions on top of it, and a one-line note on each chart saying which definition it uses.</p>
+    </div>
+  </section>
+
+  <section class="section" id="part-3">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · covers placing an insurer on the dial</span>
+      <h2>Placing an insurer on the dial</h2>
+      <span class="tag concept">5 min live</span>
+    </div>
+    <p class="lede">The summaries agree that, in the article, the right balance depends on industry, regulation and competition (reported). For an insurer those forces pull in opposite directions at once. Regulation pulls toward defense: reports a supervisor reads closely, audits, capital calculations that must reconcile. Competition pulls toward offense: price, speed of settlement, keeping good customers at renewal. The position is a judgement about which pull matters more this year, and it is supposed to move.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A half-circle dial from defense on the left to offense on the right. Regulation, through audits, reports and capital, pulls the needle toward defense. Competition, through price, speed and retention, pulls it toward offense. The brass needle shows an insurer today leaning defense; a dashed needle shows the same insurer later, closer to balance, with a curved arrow from today to later.">
+        <defs>
+          <filter id="f2cSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="31" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <pattern id="f2cHc" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(-38)"><line x1="0" y1="0" x2="0" y2="7" stroke="#0F1A6B" stroke-width="1" opacity=".5"/></pattern>
+          <marker id="f2cAr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#161A33" stroke-width="1.6" stroke-linecap="round"/></marker>
+        </defs>
+        <style>
+          .f2cH { font: 800 12px Inter, sans-serif; fill: #161A33; }
+          .f2cL { font: 600 12px Inter, sans-serif; fill: #161A33; }
+          .f2cS { font: 400 11px Inter, sans-serif; fill: #525773; }
+          .f2cA { font: 700 11px Inter, sans-serif; fill: #0F1A6B; }
+          .f2cN { font: 400 12px Inter, sans-serif; fill: #525773; }
+        </style>
+
+        <text class="f2cH" x="30" y="26">TWO FORCES ON ONE NEEDLE</text>
+        <text class="f2cA" x="440" y="70" text-anchor="middle">BALANCE</text>
+
+        <g filter="url(#f2cSk)" fill="none" stroke="#161A33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M270 250 A170 170 0 0 1 610 250" fill="#EEF0FA"/>
+          <path d="M270 250 L610 250"/>
+          <rect x="30" y="120" width="180" height="70" rx="10" transform="rotate(-1 120 155)" fill="#FFFFFF"/>
+          <rect x="670" y="120" width="180" height="70" rx="10" transform="rotate(1 760 155)" fill="#FFFFFF"/>
+          <path d="M214 168 C236 176 252 188 266 200" marker-end="url(#f2cAr)"/>
+          <path d="M666 168 C644 176 628 188 614 200" marker-end="url(#f2cAr)"/>
+          <path d="M479 105 L440 250" stroke="#525773" stroke-dasharray="6 5"/>
+          <path d="M436 253 L444 247 L377 114 Z" fill="#C9A45C"/>
+          <path d="M401 150 Q432 128 461 146" marker-end="url(#f2cAr)"/>
+          <circle cx="440" cy="250" r="8" fill="#FFFFFF"/>
+          <rect x="300" y="290" width="26" height="12" rx="3" fill="#C9A45C"/>
+          <path d="M540 296 L568 296" stroke="#525773" stroke-dasharray="6 5"/>
+        </g>
+
+        <text class="f2cL" x="46" y="146">Regulation pulls</text>
+        <text class="f2cS" x="46" y="166">audits, reports, capital</text>
+        <text class="f2cL" x="686" y="146">Competition pulls</text>
+        <text class="f2cS" x="686" y="166">price, speed, retention</text>
+        <text class="f2cA" x="256" y="268" text-anchor="end">DEFENSE</text>
+        <text class="f2cA" x="624" y="268">OFFENSE</text>
+
+        <text class="f2cL" x="334" y="301">Today: leaning defense</text>
+        <text class="f2cL" x="576" y="301">Later: closer to balance</text>
+
+        <text class="f2cN" x="30" y="340">Positions are judgements, not measurements. Forces after DalleMule and Davenport 2017 (reported).</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the needle moves because defense work, once done, is what lets offense scale</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Why the dial moves over time<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>A position on the dial is not a personality. It is a statement about this year. Three things move it. A regulatory finding or a breach pulls it sharply toward defense, often overnight. A competitor that prices faster or settles claims in days pulls it toward offense. And the most useful mover is your own progress: once the single customer record and early claim data exist, the offense work that depends on them becomes cheap, so the same strategy that leaned defense in year one can lean offense in year two without changing its mind.</p>
+        <p>That third mover is why "we are a defensive organisation" is the wrong conclusion to draw from a regulated industry. Defense first can be the fastest route to offense, as long as you say so and name the moment the balance shifts.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Reading the forces in your own organisation<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>List the last five things that reached the board about data. Mark each one as a defense signal (an audit point, a breach, a report that would not reconcile) or an offense signal (a lost customer segment, a slow process a competitor does faster, a pilot that worked). The count is not a score; the article does not give one, and no published scale turns these signals into a dial position. It is evidence for a judgement you will have to defend.</p>
+        <p>Then ask what would move the needle a year from now. If the answer is "nothing we plan to do", the strategy is static and it will be overtaken by events. If the answer names a piece of defense work that unlocks offense, you have the start of a sequence, which is exactly what session 3 turns into three bets.</p>
+      </div>
+    </details>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>The swing after a finding.</strong> A familiar pattern in regulated firms: an audit finding lands, every data budget swings to remediation, and the analytics team spends a year reconciling reports. When the finding closes, the budget swings back and the foundations are left half-built. A dial position written down before the finding, with its reason, lets a CDO argue for keeping the defense work that the offense plan needs, rather than swinging twice.</p>
+    </div>
+  </section>
+
+  <section class="section" id="demo-1">
+    <div class="section-kicker">
+      <span class="klabel">Build-along</span>
+      <h2>Keelson on the dial, and an ambition it can keep</h2>
+      <span class="tag demo">★ 22 min · everyone builds</span>
+    </div>
+    <p class="lede">Maya places Keelson on the dial using only evidence from her session 1 notes (all constructed), then writes a two-sentence ambition statement and tests it against Rumelt's "mistaking goals for strategy" (reported). Run the same steps on your own diagnosis as you go; your position will differ, and the reasons matter more than the spot.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 310" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Four evidence notes from Keelson's interviews, each tagged with the way it pulls. Elena's audit with two sources for one claims total pulls defense. Priya's one customer under three IDs pulls defense. Tom's five pilots that never scaled pulls offense. Pricing's declined quotes that were never stored pulls offense. On the right, a scale from defense to offense with Keelson today marked in brass left of centre, and a dashed marker right of centre for after the claims data fix lands. Below, the goal test: which request would the ambition reject?">
+        <defs>
+          <filter id="f2dSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="43" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <pattern id="f2dHc" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(-38)"><line x1="0" y1="0" x2="0" y2="7" stroke="#0F1A6B" stroke-width="1" opacity=".5"/></pattern>
+          <marker id="f2dAr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#161A33" stroke-width="1.6" stroke-linecap="round"/></marker>
+        </defs>
+        <style>
+          .f2dH { font: 800 12px Inter, sans-serif; fill: #161A33; }
+          .f2dL { font: 600 12px Inter, sans-serif; fill: #161A33; }
+          .f2dS { font: 400 11px Inter, sans-serif; fill: #525773; }
+          .f2dB { font: 800 11px Inter, sans-serif; fill: #4A360C; }
+          .f2dW { font: 800 11px Inter, sans-serif; fill: #FFFFFF; }
+          .f2dA { font: 700 11px Inter, sans-serif; fill: #0F1A6B; }
+          .f2dN { font: 400 12px Inter, sans-serif; fill: #525773; }
+        </style>
+
+        <text class="f2dH" x="30" y="26">FROM SESSION 1 EVIDENCE TO A POSITION</text>
+
+        <g filter="url(#f2dSk)" fill="none" stroke="#161A33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="30" y="56" width="300" height="40" rx="6" transform="rotate(-1 180 76)" fill="#FFFFFF"/>
+          <rect x="30" y="108" width="300" height="40" rx="6" transform="rotate(1 180 128)" fill="#FFFFFF"/>
+          <rect x="30" y="160" width="300" height="40" rx="6" transform="rotate(-1.2 180 180)" fill="#FFFFFF"/>
+          <rect x="30" y="212" width="300" height="40" rx="6" transform="rotate(1.2 180 232)" fill="#FFFFFF"/>
+          <rect x="345" y="64" width="116" height="24" rx="12" fill="#0F1A6B"/>
+          <rect x="345" y="116" width="116" height="24" rx="12" fill="#0F1A6B"/>
+          <rect x="345" y="168" width="116" height="24" rx="12" fill="#EEF0FA"/>
+          <rect x="345" y="220" width="116" height="24" rx="12" fill="#EEF0FA"/>
+          <rect x="520" y="128" width="320" height="16" rx="8" fill="url(#f2dHc)"/>
+          <path d="M630 104 L650 104 L640 124 Z" fill="#C9A45C"/>
+          <path d="M690 166 L710 166 L700 148 Z" stroke="#525773" stroke-dasharray="4 3" fill="#FFFFFF"/>
+          <path d="M656 114 L690 114" marker-end="url(#f2dAr)"/>
+          <rect x="520" y="212" width="330" height="60" rx="10" transform="rotate(-0.5 685 242)" fill="#EEF0FA"/>
+        </g>
+
+        <text class="f2dL" x="46" y="81">Elena: two sources, one claims total</text>
+        <text class="f2dL" x="46" y="133">Priya: one customer under 3 IDs</text>
+        <text class="f2dL" x="46" y="185">Tom: five pilots, none scaled</text>
+        <text class="f2dL" x="46" y="237">Pricing: declined quotes not stored</text>
+        <text class="f2dW" x="403" y="80" text-anchor="middle">PULLS DEFENSE</text>
+        <text class="f2dW" x="403" y="132" text-anchor="middle">PULLS DEFENSE</text>
+        <text class="f2dA" x="403" y="184" text-anchor="middle">PULLS OFFENSE</text>
+        <text class="f2dA" x="403" y="236" text-anchor="middle">PULLS OFFENSE</text>
+
+        <text class="f2dB" x="640" y="96" text-anchor="middle">Keelson today</text>
+        <text class="f2dA" x="520" y="166">DEFENSE</text>
+        <text class="f2dA" x="840" y="166" text-anchor="end">OFFENSE</text>
+        <text class="f2dS" x="700" y="190" text-anchor="middle">after the claims fix lands</text>
+
+        <text class="f2dA" x="536" y="234">THEN THE GOAL TEST</text>
+        <text class="f2dL" x="536" y="254">Which request would the ambition reject?</text>
+
+        <text class="f2dN" x="30" y="296">Evidence from session 1's constructed notes. The position is a judgement, not a measurement.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - two defense pulls are the cause, two offense pulls are what the cause blocks, so Keelson leans defense now to move right later</figcaption>
+    </figure>
+
+    <div class="steps">
+      <div class="step">
+        <p><strong>Sort the evidence by the way it pulls.</strong> Take each note from your diagnosis and ask: is this about risk to the company, or about value the company is missing? Write one word against each, defense or offense. Do not add new evidence yet; the dial should rest on what the listening tour already found.</p>
+        <div class="prompt-box good"><span class="label">★ Step 1 · the evidence, sorted (constructed)</span>Elena: audit found two sources for one claims total   DEFENSE
+Priya: one customer held under 3 IDs                  DEFENSE
+Ben:   reserves rebuilt by hand every quarter          DEFENSE
+Tom:   five pilots proved value, none scaled           OFFENSE
+Pricing: declined quotes were never stored            OFFENSE</div>
+      </div>
+      <div class="step">
+        <p><strong>Name the forces outside the building.</strong> Two lines: what the regulator expects of Keelson's data, and where competitors are beating it. Keep both qualitative; Keelson is constructed and there is no market statistic to quote.</p>
+        <div class="prompt-box good"><span class="label">★ Step 2 · the two forces</span>Regulation:  claims totals and reserves must reconcile
+             in every report, and the last audit says
+             they do not.                      pulls DEFENSE
+Competition: rivals settle simple claims faster and
+             price renewals per customer.      pulls OFFENSE</div>
+      </div>
+      <div class="step">
+        <p><strong>Ask which pull is the cause.</strong> This is the step that turns a tally into a judgement. At Keelson the defense notes explain the offense notes: pilots could not scale because each rebuilt the customer, and pricing cannot use declined quotes it cannot join to a customer. When defense is the cause of the offense pain, the dial leans defense, and says why.</p>
+        <div class="prompt-box good"><span class="label">★ Step 3 · cause and effect</span>Defense gap                      blocks offense win
+one customer, 3 IDs           -&gt;  pilots cannot scale
+claims amount fixed late       -&gt;  fast-track, fraud triage
+no governed customer key       -&gt;  renewal pricing by customer
+
+Verdict: the offense pain is downstream of the defense gap.</div>
+      </div>
+      <div class="step">
+        <p><strong>Place the needle today and say where it moves.</strong> One sentence for today, one for the move, and the event that triggers it. The trigger matters most: it is the promise that defense is a route, not a destination.</p>
+        <div class="prompt-box good"><span class="label">★ Step 4 · Keelson on the dial</span>Today:   lean defense. Build the single customer record
+         and capture claim facts at first notice.
+Move:    toward balance once claims data is fixed at
+         source (session 3 calls this bet CDQ).
+Trigger: the claims total reconciles in two quarters
+         running, with no manual rebuild.</div>
+      </div>
+      <div class="step">
+        <p><strong>Write the ambition in two sentences.</strong> Sentence one says what comes first and why. Sentence two says what that unlocks and which offense work waits for it. No target year, no percentage, no adjective doing the work of a decision.</p>
+        <div class="prompt-box good"><span class="label">★ Step 5 · Keelson's ambition statement (draft)</span>For the next two years Keelson's data work leans defense:
+one governed customer record and claim facts captured at
+first notice, owned and audited.
+Every offense bet we fund must stand on those two records,
+starting with the claims decisions that need them earliest.</div>
+      </div>
+      <div class="step">
+        <p><strong>Test it against "goals are not strategy".</strong> Rumelt's hallmark (reported) is mistaking a goal for a strategy. The test from session 1 still works: read the statement and name the requests it rejects. If it rejects nothing, rewrite it.</p>
+        <div class="prompt-box good"><span class="label">★ Step 6 · the goal test</span>Rejects, for now:
+  a renewal-pricing model on today's three customer IDs
+  a claims chatbot built on raw extracts
+  a new platform bought before the records it will hold exist
+Allows:
+  any bet that uses the customer record or early claim facts
+
+Compare: "Become a data-driven insurer by 2028"
+  rejects nothing.  It is a goal.</div>
+      </div>
+    </div>
+
+    <div class="callout tip">
+      <p><strong>Read the trigger to the sponsor, not just the position.</strong> Tom does not need to agree that Keelson is "defensive". He needs to agree on the event that moves the needle, because that is what he will be asked about at the board. A position without a trigger reads as caution; a position with one reads as a plan.</p>
+    </div>
+  </section>
+
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Before session 3</h2>
+      <span class="tag exercise">30 min</span>
+    </div>
+    <ol>
+      <li><strong>Sort your diagnosis evidence into defense and offense pulls,</strong> one word against each note, and mark which pulls are the cause of the others.</li>
+      <li><strong>Draw your own source-to-views picture</strong> for one key record (customer, order, account): the systems that feed it, the governed version, and the three views that depend on it. Name the owner of each.</li>
+      <li><strong>Place your organisation on the dial</strong> in one sentence, with the trigger that would move it in the next 12 to 24 months.</li>
+      <li><strong>Write your two-sentence ambition statement</strong> and list three requests it rejects. Bring the list to session 3, where it becomes the first filter on the portfolio.</li>
+    </ol>
+  </section>
+
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions</h2>
+    </div>
+    <p>Clear all three and session 2 gets stamped in your passport.</p>
+
+    <div class="quiz-q" data-answer="3">
+      <p class="qtext">1 · How do a single source of truth and multiple versions of the truth relate?</p>
+      <button class="qopt" type="button">A · They are alternatives; a strategy picks one and retires the other</button>
+      <button class="qopt" type="button">B · MVOTs replace the SSOT once the analytics team is mature enough</button>
+      <button class="qopt" type="button">C · The SSOT is offense work and MVOTs are defense work</button>
+      <button class="qopt" type="button">D · MVOTs are built from the SSOT, each shaped for one purpose and traceable back to it</button>
+      <p class="qwhy">As the article is summarised, defense is tied to the SSOT and offense to MVOTs built from it. Several versions are healthy when they differ on purpose and share one governed key; C reverses the sides, and A and B lose either trust or usefulness.</p>
+    </div>
+
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">2 · Which event is most likely to move an insurer's dial toward defense this year?</p>
+      <button class="qopt" type="button">A · A competitor launches a faster renewal-pricing app</button>
+      <button class="qopt" type="button">B · An audit finds two sources for the same claims total</button>
+      <button class="qopt" type="button">C · The board asks for an AI pilot</button>
+      <button class="qopt" type="button">D · A fraud-triage pilot proves value on one product line</button>
+      <p class="qwhy">A reconciliation failure in a regulated report is a defense signal: regulation pulls toward control. A and D are offense signals, and a request for a pilot (C) is a wish, not a force on the balance.</p>
+    </div>
+
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">3 · Which ambition statement passes the "goals are not strategy" test?</p>
+      <button class="qopt" type="button">A · "Become the most data-driven insurer in the market by 2028"</button>
+      <button class="qopt" type="button">B · "Use data to delight every customer"</button>
+      <button class="qopt" type="button">C · "Lean defense for two years on one customer record and early claim facts; fund only offense bets that stand on them"</button>
+      <button class="qopt" type="button">D · "Double the analytics team and move everything to the cloud"</button>
+      <p class="qwhy">C says what comes first and why, and it rules out bets that need records which do not exist yet. A and B are goals that reject nothing, and D is a list of inputs with no diagnosis behind it.</p>
+    </div>
+
+    <p class="quiz-score"></p>
+  </section>
+
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Sources covered</span>
+      <h2>What this session teaches, and where it came from</h2>
+    </div>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">DalleMule and Davenport (2017), "What's Your Data Strategy?", HBR May-June 2017</span><span class="note">Title, authors, their roles at the time and the subtitle about balancing offense and defense, read at source on the article page</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">The article's four printed figures</span><span class="note">Under half of structured data used in decisions, under 1 percent of unstructured data analysed, over 70 percent of employees with access they should not have, 80 percent of analyst time on finding and preparing data; as printed, with the underlying studies not named</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Offense, defense, SSOT and MVOTs</span><span class="note">Definitions, the link from defense to SSOT and offense to MVOTs, and the balance shifting with industry, regulation and competition; reported, the article body is behind a paywall</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Rumelt (2011), mistaking goals for strategy</span><span class="note">Hallmark of bad strategy used as the ambition test, reported</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Placing an insurer on the dial</span><span class="note">Regulation and competition as the two pulls, and the dial moving as foundations land, are our application of the framework; no published scale sets a position</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Keelson Mutual, its systems, notes and ambition statement</span><span class="note">Constructed for teaching; no number about Keelson is a measurement</span></div>
+    </div>
+    <p class="mono" style="margin-top:14px">Every fact on this page, and its verification tier, is recorded in the course's source map.</p>
+  </section>
+
+  <section class="cheat" id="cheatsheet">
+    <h3>Session 2 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>Defense</b><span>Minimise downside: compliance, security, privacy, integrity. Product: one governed source of truth.</span></div>
+      <div class="cheat-item"><b>Offense</b><span>Support business objectives: revenue, profit, customers. Product: fit-for-purpose versions built from the source.</span></div>
+      <div class="cheat-item"><b>Version or copy?</b><span>Starts from the SSOT key, rules written down, a named owner. Any no means it will drift.</span></div>
+      <div class="cheat-item"><b>The two pulls</b><span>Regulation pulls toward defense; competition pulls toward offense. The position is a judgement for this year.</span></div>
+      <div class="cheat-item"><b>Name the trigger</b><span>Say which piece of defense work, once done, moves the needle toward offense.</span></div>
+      <div class="cheat-item"><b>The ambition test</b><span>Two sentences, no target year. Name three requests it rejects, or rewrite it.</span></div>
+    </div>
+  </section>
+
+  <div class="callout next">
+    <span class="nx-pill">Next session</span>
+    <p>Keelson leans defense, with a trigger to move. Session 3 turns that into money and people: 24 candidate bets, a budget, a team that can only do so much, and the question every new CDO is judged on, which three do you fund first?</p>
+  </div>
+
+  <footer class="pagefoot">
+    <span>Session 2 of 6 · learn-data-strategy-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="01-diagnosis-before-ambition.html">← Prev: Diagnosis before ambition</a> &nbsp;·&nbsp; <a href="03-the-first-three-bets.html">Next: The first three bets →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- social:start -->
+<meta name="description" content="Session 3 of 6. Which three data bets does a new CDO fund first? Score 24 constructed Keelson Mutual use cases on value, feasibility and data readiness, fit them to a budget and a team, compare exact search with greedy picking, see why quick wins first gives a worse portfolio, and test how stable the pick is before you take it to the board.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Learn with Phoebe">
+<meta property="og:title" content="The first three bets - learn data strategy with phoebe">
+<meta property="og:description" content="Session 3 of 6. A use-case portfolio scorer, computed in your browser: value, feasibility, data readiness, budget, team, and how often the pick survives.">
+<meta property="og:url" content="https://phoebefu6.github.io/learn-data-strategy-with-phoebe/courses/03-the-first-three-bets.html">
+<meta property="og:image" content="https://phoebefu6.github.io/learn-data-strategy-with-phoebe/assets/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The first three bets - learn data strategy with phoebe">
+<meta name="twitter:description" content="Session 3 of 6. Score 24 constructed bets, fit a budget, and test whether the pick survives.">
+<meta name="twitter:image" content="https://phoebefu6.github.io/learn-data-strategy-with-phoebe/assets/og-cover.png">
+<!-- social:end -->
+<title>Session 3 · The first three bets - learn data strategy with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-data-strategy-with-phoebe</a> / Session 3 of 6</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn Data Strategy with Phoebe · Session 3 of 6</div>
+    <h1>The first three <span class="accent">bets</span></h1>
+    <p class="sub">Keelson's diagnosis is written and its place on the offense-defense dial is set. Now the question every new CDO is really judged on: which three things do you fund first? Tonight 24 candidate bets sit in this page, each scored on value, feasibility and data readiness, then fitted to a real-sized budget and a team that can only do so much. Five rungs add one constraint at a time. The portfolio is constructed, so the bench claims only the order of bets, never a return, and two buttons make it worse on purpose so you can see why.</p>
+    <div class="chip-row">
+      <span class="chip level">🟡 Bench night</span>
+      <span class="chip audience">Bring your own longlist</span>
+      <span class="chip audience">No code tonight, all clicking</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:2">3-12 · Three lenses</span>
+      <span class="a3" style="flex:6">12-38 · The bench, rung by rung</span>
+      <span class="a4" style="flex:2">38-45 · The range, and Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Where we start</h2>
+    </div>
+    <p class="lede">Keelson Mutual is constructed, and so is its portfolio. Maya has cut the 40 requests from session 1 to 24 candidate bets and given each one five things: a value band from 1 to 10 agreed with the business owners, effort in team-months, cost in thousands, a data-readiness score from 0 to 100 from the listening tour, and regulatory risk from 1 to 3. Some bets depend on others: fraud network analytics needs the single customer view first. Tom has given her a first-year envelope of 1,100 (thousands) and 24 team-months. Real rows do not exist for an invented insurer, so read every number on the bench as an ordering: which bets rise, which fall, and why. Your numbers will differ.</p>
+
+    <div class="legend">
+      <span class="pill">🎫 Clear all three quiz questions to stamp your passport</span>
+      <span class="pill">ordering = computed from constructed rows; read the order, never a return</span>
+      <span class="pill">anti-lever and break = worse on purpose</span>
+    </div>
+
+    <div class="callout win">
+      <p><strong>★ What you walk out with tonight.</strong> A scoring rule you can defend in one sentence, the reason a readiness gate beats a readiness weight alone, what an exact search finds that ranking and greedy picking miss, the honest cost of "quick wins first", and the sentence that tells a board how sure you are.</p>
+    </div>
+  </section>
+
+  <section class="section" id="part-1">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers value, feasibility and data readiness</span>
+      <h2>Three lenses, one number, and a gate</h2>
+      <span class="tag concept">6 min live</span>
+    </div>
+    <p class="lede">Every bet gets three parts between 0 and 1. Value is the band rescaled. Feasibility falls with effort and with regulatory risk. Readiness is the readiness score over 100. The weighted average, times 100, is the bet's score. Before any of that, a gate: a bet whose readiness is under 40 is not eligible this year, because its data does not exist yet. The rule is printed on the widget and the Python reference that checked every number on this page runs the same rule.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two bets flow left to right. Fraud triage at first notice, value 8, effort 7, regulatory risk 2, readiness 62, passes the readiness gate of 40 and enters the scoring box: value part 0.778 times weight 0.5, feasibility part 0.553 times 0.2, readiness part 0.620 times 0.3, giving a score of 68.5, highlighted in brass. Claim severity prediction, value 9, readiness 20, is stopped at the gate: loss amounts are keyed only at settlement.">
+        <defs>
+          <filter id="f3aSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="17" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <pattern id="f3aHc" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(-38)"><line x1="0" y1="0" x2="0" y2="7" stroke="#0F1A6B" stroke-width="1" opacity=".5"/></pattern>
+          <marker id="f3aAr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#161A33" stroke-width="1.6" stroke-linecap="round"/></marker>
+        </defs>
+        <style>
+          .f3aH { font: 800 12px Inter, sans-serif; fill: #161A33; }
+          .f3aL { font: 600 12px Inter, sans-serif; fill: #161A33; }
+          .f3aS { font: 400 11px Inter, sans-serif; fill: #525773; }
+          .f3aB { font: 800 11px Inter, sans-serif; fill: #4A360C; }
+          .f3aV { font: 800 20px Inter, sans-serif; fill: #0A1150; }
+          .f3aA { font: 700 11px Inter, sans-serif; fill: #0F1A6B; }
+          .f3aR { font: 800 11px Inter, sans-serif; fill: #991B1B; }
+          .f3aN { font: 400 12px Inter, sans-serif; fill: #525773; }
+        </style>
+
+        <text class="f3aH" x="30" y="26">HOW ONE BET BECOMES A SCORE, AND HOW ANOTHER NEVER GETS ONE</text>
+
+        <g filter="url(#f3aSk)" fill="none" stroke="#161A33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="30" y="58" width="190" height="78" rx="8" transform="rotate(-1 125 97)" fill="#FFFFFF"/>
+          <rect x="30" y="196" width="190" height="78" rx="8" transform="rotate(1 125 235)" fill="#FFFFFF"/>
+          <rect x="262" y="52" width="104" height="228" rx="10" transform="rotate(0.4 314 166)" fill="url(#f3aHc)"/>
+          <rect x="406" y="54" width="250" height="88" rx="10" transform="rotate(-0.4 531 98)" fill="#EEF0FA"/>
+          <rect x="700" y="66" width="150" height="64" rx="10" transform="rotate(1 775 98)" fill="#C9A45C"/>
+          <rect x="406" y="200" width="250" height="70" rx="10" transform="rotate(0.4 531 235)" fill="#FEF2F2" stroke="#FCA5A5"/>
+          <path d="M224 97 L256 97" marker-end="url(#f3aAr)"/>
+          <path d="M224 235 L256 235" marker-end="url(#f3aAr)"/>
+          <path d="M370 97 L400 97" marker-end="url(#f3aAr)"/>
+          <path d="M370 235 L400 235" marker-end="url(#f3aAr)"/>
+          <path d="M660 98 L694 98" marker-end="url(#f3aAr)"/>
+        </g>
+
+        <text class="f3aL" x="42" y="80">FTR fraud triage</text>
+        <text class="f3aS" x="42" y="98">value 8 · effort 7</text>
+        <text class="f3aS" x="42" y="114">reg risk 2 · ready 62</text>
+        <text class="f3aL" x="42" y="218">SEV claim severity</text>
+        <text class="f3aS" x="42" y="236">value 9 · effort 7</text>
+        <text class="f3aS" x="42" y="252">reg risk 2 · ready 20</text>
+        <rect x="270" y="150" width="88" height="40" rx="6" fill="#FFFFFF"/>
+        <text class="f3aA" x="314" y="166" text-anchor="middle">GATE</text>
+        <text class="f3aL" x="314" y="182" text-anchor="middle">ready ≥ 40</text>
+        <text class="f3aL" x="420" y="76">value     0.778 × 0.5</text>
+        <text class="f3aL" x="420" y="98">feasible  0.553 × 0.2</text>
+        <text class="f3aL" x="420" y="120">ready     0.620 × 0.3</text>
+        <text class="f3aB" x="775" y="90" text-anchor="middle">SCORE</text>
+        <text class="f3aV" x="775" y="114" text-anchor="middle">68.5</text>
+        <text class="f3aR" x="420" y="224">OUT THIS YEAR: ready 20 &lt; 40</text>
+        <text class="f3aS" x="420" y="242">loss amounts are keyed only</text>
+        <text class="f3aS" x="420" y="258">at settlement</text>
+
+        <text class="f3aN" x="30" y="306">Feasibility = (1 - effort/20) × (1 - 0.15 × (reg - 1)). Rows and weights constructed; your numbers will differ.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - SEV has the bigger prize and never gets a score; the gate is where the diagnosis bites</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>Why three lenses, and who sets the weights<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Value alone picks prizes. Feasibility alone picks chores. Readiness is the lens most strategies leave out, and it is the one session 1's diagnosis feeds directly: Keelson cannot trust or join its customer and claims data, so any bet that needs those things early scores low on readiness, whatever its value. The default weights here are value 0.5, feasibility 0.2, readiness 0.3. They are a choice, and the right people to make it are the sponsor and the business owners, in the room, before anyone sees the ranking.</p>
+        <p>How to run that weighting conversation well, and how to calibrate the value bands themselves, is the method of weighing options taught in the <a href="https://phoebefu6.github.io/learn-decision-intelligence-with-phoebe/">Decision Intelligence course ↗</a>. This session takes the scores as given and asks the CDO's question: which three, first.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Why readiness is a gate as well as a weight<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>A weight lets a big enough prize outvote missing data. With readiness only weighted, a bet whose data does not exist can still rank first if its value is high, and the strategy then promises something the organisation cannot start. The gate says plainly: under 40, the first job is to create the data, and that job is a different bet. At Keelson, SEV (claim severity at first notice) cannot be built until claims capture amounts early, which is part of what CDQ, fixing claims data at source, delivers.</p>
+        <p>The threshold of 40 is constructed and arbitrary. Moving it changes which bets are eligible, which is a decision to make out loud. The break button on the bench removes the gate and the readiness weight together, so you can see what the pick looks like when nobody asks whether the data exists.</p>
+      </div>
+    </details>
+  </section>
+
+  <section class="section" id="bench">
+    <div class="section-kicker">
+      <span class="klabel">Build-along · the bench</span>
+      <h2>Twenty-four bets, five rungs, two ways to get it wrong</h2>
+      <span class="tag demo">★ 26 min · the main event</span>
+    </div>
+    <p class="lede">The bench opens on rung 1. Work down the rungs in order and, before moving on, say out loud what the new constraint removed. Then try the anti-lever and the break. Move the sliders whenever you want to argue with a weight, a budget or the team's capacity; every number is recomputed in this page, and Reset brings back the defaults the text below quotes.</p>
+
+    <div id="bets-bench" data-step="value"></div>
+
+    <div class="callout tip">
+      <p><strong>Read it in this order.</strong> At the defaults, rung 1 picks PEL, FNW and PHO: value 28, cost 2,110 against a budget of 1,100, and all three under the readiness gate. Rung 3 picks CFT, FTR and SUB, which fits the money but leaves CFT and SUB without CDQ, the claims fix they depend on. Rung 4's exact search over 283 valid sets picks CDQ, FTR and CFT: value 21, cost 960, 21 team-months, two offense and one defense.</p>
+    </div>
+  </section>
+
+  <section class="section" id="part-2">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · covers what the ladder shows, and why quick wins mislead</span>
+      <h2>Value captured falls, and that is the point</h2>
+      <span class="tag concept">6 min live</span>
+    </div>
+    <p class="lede">Each rung adds one piece of reality, and the value on the slide drops: 28 for the first two rungs, 23 with readiness, 21 for the exact pick. That drop is not the strategy getting worse. The first two picks were never deliverable, and the third could not start without a bet it left out. The anti-lever is the one rung that is genuinely worse.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bars of value captured, sum of three value bands, at the default settings. Value alone 28, three bets with no usable data and over budget. Plus feasibility 28, three with no usable data and over budget. Plus readiness 23, needs CDQ first. Exact search 21, fits with dependencies inside, highlighted in brass. Greedy 22, fits with a lower score. Quick wins first 10, one bet with no usable data and 6 of 24 team-months used.">
+        <defs>
+          <filter id="f3bSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="23" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <pattern id="f3bHc" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(-38)"><line x1="0" y1="0" x2="0" y2="7" stroke="#0F1A6B" stroke-width="1" opacity=".5"/></pattern>
+        </defs>
+        <style>
+          .f3bH { font: 800 12px Inter, sans-serif; fill: #161A33; }
+          .f3bL { font: 600 12px Inter, sans-serif; fill: #161A33; }
+          .f3bS { font: 400 11px Inter, sans-serif; fill: #525773; }
+          .f3bV { font: 800 13px Inter, sans-serif; fill: #0A1150; }
+          .f3bR { font: 800 11px Inter, sans-serif; fill: #991B1B; }
+          .f3bN { font: 400 12px Inter, sans-serif; fill: #525773; }
+        </style>
+
+        <text class="f3bH" x="30" y="26">VALUE CAPTURED BY EACH RULE, AND WHAT IS WRONG WITH IT</text>
+
+        <g filter="url(#f3bSk)" fill="none" stroke="#161A33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="260" y="52" width="448" height="30" rx="4" fill="url(#f3bHc)"/>
+          <rect x="260" y="104" width="448" height="30" rx="4" fill="url(#f3bHc)"/>
+          <rect x="260" y="156" width="368" height="30" rx="4" fill="#C7CCEB"/>
+          <rect x="260" y="208" width="336" height="30" rx="4" fill="#C9A45C"/>
+          <rect x="260" y="260" width="352" height="30" rx="4" fill="#C7CCEB"/>
+          <rect x="260" y="312" width="160" height="30" rx="4" fill="#FEF2F2" stroke="#991B1B"/>
+        </g>
+
+        <text class="f3bL" x="240" y="72" text-anchor="end">1 · value alone</text>
+        <text class="f3bL" x="240" y="124" text-anchor="end">2 · + feasibility</text>
+        <text class="f3bL" x="240" y="176" text-anchor="end">3 · + readiness</text>
+        <text class="f3bL" x="240" y="228" text-anchor="end">4 · exact, fits</text>
+        <text class="f3bL" x="240" y="280" text-anchor="end">4 · greedy, fits</text>
+        <text class="f3bL" x="240" y="332" text-anchor="end">quick wins first</text>
+        <text class="f3bV" x="718" y="72">28</text>
+        <text class="f3bR" x="744" y="72">3 no data, over</text>
+        <text class="f3bV" x="718" y="124">28</text>
+        <text class="f3bR" x="744" y="124">3 no data, over</text>
+        <text class="f3bV" x="638" y="176">23</text>
+        <text class="f3bR" x="664" y="176">needs CDQ first</text>
+        <text class="f3bV" x="606" y="228">21</text>
+        <text class="f3bS" x="632" y="228">fits, dependencies inside</text>
+        <text class="f3bV" x="622" y="280">22</text>
+        <text class="f3bS" x="648" y="280">fits, lower score</text>
+        <text class="f3bV" x="430" y="332">10</text>
+        <text class="f3bR" x="456" y="332">1 bet with no data, 6 of 24 team-months used</text>
+
+        <text class="f3bN" x="30" y="374">Sum of three value bands at the default weights and limits. Constructed rows: read the order, not the totals.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the hatched bars are prizes nobody can deliver; the brass bar is the first pick that is both possible and complete</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Quick wins first, priced<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Pressure to show something in 90 days pushes every new CDO toward the cheapest, fastest items. On the bench that rule picks KPI, BRK and LTR: an executive dashboard refresh, a broker dashboard and a generative AI letter-drafting pilot. Value captured is 10 against 21 for the exact set, it uses 6 of the 24 team-months, and LTR has no usable data at all: past letters are scanned PDFs in a legacy archive.</p>
+        <p>The deeper cost is that none of the three touches the diagnosis. In a year Keelson would have two refreshed dashboards and still could not join a customer or see a claim amount early. Quick wins are fine as a side dish, especially to build trust in month one. As the first three bets they spend the credibility of the new role on work that leaves the crux exactly where it was.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Exact search against greedy picking<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Greedy is how most portfolios are built: take the best-scoring bet that fits, then the next, until the money runs out. At the defaults greedy picks FTR, RET and CAT, scoring 196.7 against the exact set's 197.0. The gap is small, and greedy even carries one more value band (22 against 21). What greedy cannot do is take CFT, the highest-scoring eligible bet, because CFT needs CDQ and greedy never chose CDQ first; on its own CDQ scores too low to be picked early.</p>
+        <p>The exact search tries every valid set of three, 283 of them at the defaults, so it sees that CDQ plus CFT together beat what greedy found. With 24 bets that takes milliseconds. The lesson is not the 0.3 points. It is that foundations like CDQ rarely win a one-at-a-time ranking and often belong in the best set, which is why a CDO should score sets, not items.</p>
+      </div>
+    </details>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>The dashboard year.</strong> A familiar pattern in any organisation: a new data leader ships three visible dashboards in the first quarter, is praised, and is asked a year later why nothing structural has changed. The dashboards were real wins. They were chosen because they were fast, not because they moved the diagnosis, and the bench shows the same trade in numbers.</p>
+    </div>
+  </section>
+
+  <section class="section" id="part-3">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · covers rank stability and what to tell the board</span>
+      <h2>How sure are you? Tell the board the range</h2>
+      <span class="tag concept">6 min live</span>
+    </div>
+    <p class="lede">The weights were agreed in a room and could easily have been a little different. Rung 5 asks what happens if they were. It draws each weight 500 times, from 20 percent below to 20 percent above its value, with a fixed seed, and reruns the exact search each time. At the defaults the exact set CDQ, FTR and CFT comes back as the same set of three in 173 of 500 draws, 34.6 percent.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 390" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Out of 500 seeded weight draws: the same set of three, CDQ, FTR and CFT, in 173, highlighted in brass. FTR fraud triage is in the exact set in 352 draws, CDQ claims quality in 321, CFT claims fast-track in 321, CAT catastrophe map in 179, RET renewal retention in 179, SUB subrogation finder in 148.">
+        <defs>
+          <filter id="f3cSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="31" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+        </defs>
+        <style>
+          .f3cH { font: 800 12px Inter, sans-serif; fill: #161A33; }
+          .f3cL { font: 600 12px Inter, sans-serif; fill: #161A33; }
+          .f3cV { font: 800 12px Inter, sans-serif; fill: #0A1150; }
+          .f3cA { font: 700 11px Inter, sans-serif; fill: #0F1A6B; }
+          .f3cN { font: 400 12px Inter, sans-serif; fill: #525773; }
+        </style>
+
+        <text class="f3cH" x="30" y="26">IN HOW MANY OF 500 WEIGHT DRAWS DOES EACH BET MAKE THE CUT?</text>
+
+        <g filter="url(#f3cSk)" fill="none" stroke="#161A33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="260" y="50" width="166" height="26" rx="4" fill="#C9A45C"/>
+          <rect x="260" y="94" width="338" height="26" rx="4" fill="#0F1A6B"/>
+          <rect x="260" y="138" width="308" height="26" rx="4" fill="#2B3A93"/>
+          <rect x="260" y="182" width="308" height="26" rx="4" fill="#2B3A93"/>
+          <rect x="260" y="226" width="172" height="26" rx="4" fill="#C7CCEB"/>
+          <rect x="260" y="270" width="172" height="26" rx="4" fill="#C7CCEB"/>
+          <rect x="260" y="314" width="142" height="26" rx="4" fill="#C7CCEB"/>
+          <path d="M740 42 L740 346" stroke="#525773" stroke-width="1.4" stroke-dasharray="4 4"/>
+        </g>
+
+        <text class="f3cL" x="240" y="68" text-anchor="end">same set of three</text>
+        <text class="f3cL" x="240" y="112" text-anchor="end">FTR fraud triage</text>
+        <text class="f3cL" x="240" y="156" text-anchor="end">CDQ claims quality</text>
+        <text class="f3cL" x="240" y="200" text-anchor="end">CFT claims fast-track</text>
+        <text class="f3cL" x="240" y="244" text-anchor="end">CAT catastrophe map</text>
+        <text class="f3cL" x="240" y="288" text-anchor="end">RET renewal retention</text>
+        <text class="f3cL" x="240" y="332" text-anchor="end">SUB subrogation finder</text>
+        <text class="f3cV" x="436" y="68">173 (34.6%)</text>
+        <text class="f3cV" x="608" y="112">352 (70.4%)</text>
+        <text class="f3cV" x="578" y="156">321 (64.2%)</text>
+        <text class="f3cV" x="578" y="200">321 (64.2%)</text>
+        <text class="f3cV" x="442" y="244">179 (35.8%)</text>
+        <text class="f3cV" x="442" y="288">179 (35.8%)</text>
+        <text class="f3cV" x="412" y="332">148 (29.6%)</text>
+        <text class="f3cA" x="748" y="58">500 draws</text>
+
+        <text class="f3cN" x="30" y="374">Seeded draws (mulberry32, seed 20261029), each weight moved up to 20 percent either way. Constructed rows.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - one bet is robust, the other two slots are a choice between two pairs; say that sentence to the board</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Turning 173 of 500 into a board sentence<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>34.6 percent sounds weak until you read the bars. FTR, fraud triage at first notice, is in the exact set in 352 of 500 draws. The other two slots split between two pairs: CDQ with CFT (the claims fix and the fast-track it enables, 321 each) or CAT with RET (the catastrophe map and renewal retention, 179 each). That is a clear message: one bet survives any reasonable weighting, and the second and third are a judgement between fixing claims and protecting the book.</p>
+        <p>The sentence for the board: "Fraud triage is first under any weighting we tried. For the other two, we recommend the claims fix and fast-track, because they also answer the diagnosis; the alternative pair scores almost as well and does not." A point estimate would have hidden the judgement; the range puts it on the table where the board can own it.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>What the bench cannot tell you<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Every row is constructed, so no total on the bench is a forecast: value bands are not money, and a set's score is not a return. The bench shows how the order of bets responds to rules and limits. Your own portfolio will have different bands, different dependencies and different readiness, and the method transfers while the numbers do not.</p>
+        <p>The model also leaves things out on purpose: bets interact beyond simple dependencies, risk is reduced to a 1-3 penalty, and three is a fixed count. Building the business case for each bet, with costs and benefits in money, is planned for the business cases and ROI course, which is not yet live. Placing the chosen bets on the offense-defense dial from session 2 is the widget's "Offense : defense" tile: two offense and one defense for the exact set.</p>
+      </div>
+    </details>
+
+    <div class="callout tip">
+      <p><strong>Rerun it with the people who set the weights.</strong> Put the bench on the projector with the sponsor and the business owners, move one weight each, and let them watch which bets hold. People defend a portfolio they have seen survive their own objections.</p>
+    </div>
+  </section>
+
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Before session 4</h2>
+      <span class="tag exercise">30 min</span>
+    </div>
+    <ol>
+      <li><strong>Score your own longlist.</strong> Ten candidate bets, each with a value band, effort, cost, readiness and dependencies, in a spreadsheet. Note who agreed each value band.</li>
+      <li><strong>Find your gate.</strong> Which bets would fail a readiness gate of 40, and what bet would create the missing data?</li>
+      <li><strong>Price your quick wins.</strong> Pick your three fastest items and write which part of your diagnosis each one changes. If the answer is none for all three, they are not your first bets.</li>
+      <li><strong>Write your board sentence.</strong> One bet that survives any weighting, and the judgement call for the other two.</li>
+    </ol>
+  </section>
+
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions</h2>
+    </div>
+    <p>Clear all three and session 3 gets stamped in your passport.</p>
+
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">1 · Ranking by value alone picks PEL, FNW and PHO at Keelson. Why is that pick unusable?</p>
+      <button class="qopt" type="button">A · The three bets are all defense, so the dial is wrong</button>
+      <button class="qopt" type="button">B · Value bands are constructed, so value should never be ranked</button>
+      <button class="qopt" type="button">C · It costs 2,110 against a budget of 1,100, all three bets lack usable data, and two need a single customer view nobody picked</button>
+      <button class="qopt" type="button">D · Three bets is too few for a first year</button>
+      <p class="qwhy">Value alone ignores money, team, data and dependencies, so its pick cannot start. A is wrong in fact (all three are offense), and B misreads the point: ranking by value is fine as one lens among three.</p>
+    </div>
+
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">2 · Greedy picking misses CFT, the best-scoring eligible bet. Why?</p>
+      <button class="qopt" type="button">A · CFT depends on CDQ, and greedy takes bets one at a time, so it never chose CDQ early enough to make CFT possible</button>
+      <button class="qopt" type="button">B · CFT is over the budget on its own</button>
+      <button class="qopt" type="button">C · CFT fails the readiness gate</button>
+      <button class="qopt" type="button">D · Greedy picks at random among bets with equal scores</button>
+      <p class="qwhy">CFT costs 360 and has readiness 68, so it passes on money and data. It needs CDQ, which scores too low to be taken early one at a time. Exact search scores whole sets and finds that CDQ plus CFT together win.</p>
+    </div>
+
+    <div class="quiz-q" data-answer="3">
+      <p class="qtext">3 · The exact set survives as the same set in 173 of 500 weight draws. What should Maya tell the board?</p>
+      <button class="qopt" type="button">A · That the analysis is unreliable and the decision should wait a quarter</button>
+      <button class="qopt" type="button">B · Nothing: a board wants one answer, not a range</button>
+      <button class="qopt" type="button">C · That the pick is 34.6 percent likely to deliver its value</button>
+      <button class="qopt" type="button">D · That fraud triage is first under any weighting tried, and the other two slots are a judgement between two pairs, with her recommendation and why</button>
+      <p class="qwhy">The draws measure how sensitive the ORDER is to the weights, not a probability of success, which rules out C. FTR is in 352 of 500; the rest splits between two pairs. Naming the judgement lets the board own it.</p>
+    </div>
+
+    <p class="quiz-score"></p>
+  </section>
+
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Sources covered</span>
+      <h2>What this session teaches, and where it came from</h2>
+    </div>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">The bets bench (bets-live.js)</span><span class="note">Every ladder number on this page is computed in the browser from the constructed rows, and a separate Python reference produced identical results on every pick, count and score to three decimals</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">DalleMule and Davenport (2017), "What's Your Data Strategy?"</span><span class="note">The offense and defense split used on the widget's dial tile; definitions reported, taught in session 2</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Scoring by value, feasibility and readiness</span><span class="note">A common prioritisation pattern; the exact rule, gate and weights here are constructed and stated on the widget</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Keelson Mutual and its 24 use cases</span><span class="note">Constructed for teaching; real rows do not exist for an invented portfolio, so only orderings are claimed</span></div>
+    </div>
+    <p class="mono" style="margin-top:14px">Every fact on this page, and its verification tier, is recorded in the course's source map.</p>
+  </section>
+
+  <section class="cheat" id="cheatsheet">
+    <h3>Session 3 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>Three lenses</b><span>Value, feasibility, readiness. Weights agreed by the owners before anyone sees a ranking.</span></div>
+      <div class="cheat-item"><b>Gate, then weight</b><span>No data, no bet this year. Creating the data is its own bet.</span></div>
+      <div class="cheat-item"><b>Score sets, not items</b><span>Foundations lose one-at-a-time rankings and win inside the best set.</span></div>
+      <div class="cheat-item"><b>Fit money and people</b><span>Budget and team-months together; dependencies inside the set.</span></div>
+      <div class="cheat-item"><b>Price the quick wins</b><span>Which part of the diagnosis does each one change? None means side dish.</span></div>
+      <div class="cheat-item"><b>Give the range</b><span>What survives any weighting, and the judgement for the rest.</span></div>
+    </div>
+  </section>
+
+  <div class="callout next">
+    <span class="nx-pill">Next session</span>
+    <p>Keelson has three bets: CDQ, FTR and CFT. Session 4 decides who delivers them: a central team, hub and spoke, or federated domains, where the CDO reports, who owns each bet's data, and the minimum governance that lets three bets ship.</p>
+  </div>
+
+  <footer class="pagefoot">
+    <span>Session 3 of 6 · learn-data-strategy-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="02-what-the-data-is-for.html">← Prev: What the data is for</a> &nbsp;·&nbsp; <a href="04-operating-model.html">Next: Operating model →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/bets-data.js?v=1"></script>
+<script src="../assets/bets-live.js?v=6"></script>
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>
